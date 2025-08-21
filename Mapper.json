@@ -1,0 +1,736 @@
+{
+    "Document": {
+        "groupSourceField": "Document",
+        "AppHdr": {
+            "groupSourceField": "Document.AppHdr",
+            "CharSet": {
+                "sourceField": "Document.AppHdr.CharSet"
+            },
+            "Fr": {
+                "groupSourceField": "Document.AppHdr.Fr",
+                "OrgId": {
+                    "sourceField": "Document.AppHdr.Fr.OrgId"
+                },
+                "FIId": {
+                    "groupSourceField": "Document.AppHdr.Fr.FIId",
+                    "FinInstnId": {
+                        "groupSourceField": "Document.AppHdr.Fr.FIId.FinInstnId",
+                        "BICFI": {
+                            "sourceField": "Document.AppHdr.Fr.FIId.FinInstnId.BICFI"
+                        },
+                        "ClrSysMmbId": {
+                            "groupSourceField": "Document.AppHdr.Fr.FIId.FinInstnId.ClrSysMmbId",
+                            "ClrSysId": {
+                                "groupSourceField": "Document.AppHdr.Fr.FIId.FinInstnId.ClrSysMmbId.ClrSysId",
+                                "Cd": {
+                                    "sourceField": "Document.AppHdr.Fr.FIId.FinInstnId.ClrSysMmbId.ClrSysId.Cd"
+                                },
+                                "Prtry": {
+                                    "sourceField": "Document.AppHdr.Fr.FIId.FinInstnId.ClrSysMmbId.ClrSysId.Prtry"
+                                }
+                            },
+                            "MmbId": {
+                                "sourceField": "Document.AppHdr.Fr.FIId.FinInstnId.ClrSysMmbId.MmbId"
+                            }
+                        },
+                        "LEI": {
+                            "sourceField": "Document.AppHdr.Fr.FIId.FinInstnId.LEI"
+                        },
+                        "Nm": {
+                            "sourceField": "Document.AppHdr.Fr.FIId.FinInstnId.Nm"
+                        },
+                        "PstlAdr": {
+                            "sourceField": "Document.AppHdr.Fr.FIId.FinInstnId.PstlAdr"
+                        },
+                        "Othr": {
+                            "sourceField": "Document.AppHdr.Fr.FIId.FinInstnId.Othr"
+                        }
+                    },
+                    "BrnchId": {
+                        "sourceField": "Document.AppHdr.Fr.FIId.BrnchId"
+                    }
+                }
+            },
+            "To": {
+                "groupSourceField": "Document.AppHdr.To",
+                "OrgId": {
+                    "sourceField": "Document.AppHdr.To.OrgId"
+                },
+                "FIId": {
+                    "groupSourceField": "Document.AppHdr.To.FIId",
+                    "FinInstnId": {
+                        "groupSourceField": "Document.AppHdr.To.FIId.FinInstnId",
+                        "BICFI": {
+                            "sourceField": "Document.AppHdr.To.FIId.FinInstnId.BICFI"
+                        },
+                        "ClrSysMmbId": {
+                            "groupSourceField": "Document.AppHdr.To.FIId.FinInstnId.ClrSysMmbId",
+                            "ClrSysId": {
+                                "groupSourceField": "Document.AppHdr.To.FIId.FinInstnId.ClrSysMmbId.ClrSysId",
+                                "Cd": {
+                                    "sourceField": "Document.AppHdr.To.FIId.FinInstnId.ClrSysMmbId.ClrSysId.Cd"
+                                },
+                                "Prtry": {
+                                    "sourceField": "Document.AppHdr.To.FIId.FinInstnId.ClrSysMmbId.ClrSysId.Prtry"
+                                }
+                            },
+                            "MmbId": {
+                                "sourceField": "Document.AppHdr.To.FIId.FinInstnId.ClrSysMmbId.MmbId"
+                            }
+                        },
+                        "LEI": {
+                            "sourceField": "Document.AppHdr.To.FIId.FinInstnId.LEI"
+                        },
+                        "Nm": {
+                            "sourceField": "Document.AppHdr.To.FIId.FinInstnId.Nm"
+                        },
+                        "PstlAdr": {
+                            "sourceField": "Document.AppHdr.To.FIId.FinInstnId.PstlAdr"
+                        },
+                        "Othr": {
+                            "sourceField": "Document.AppHdr.To.FIId.FinInstnId.Othr"
+                        }
+                    },
+                    "BrnchId": {
+                        "sourceField": "Document.AppHdr.To.FIId.BrnchId"
+                    }
+                }
+            },
+            "BizMsgIdr": {
+                "sourceField": "Document.AppHdr.BizMsgIdr"
+            },
+            "MsgDefIdr": {
+                "sourceField": "Document.AppHdr.MsgDefIdr"
+            },
+            "BizSvc": {
+                "sourceField": "Document.AppHdr.BizSvc"
+            },
+            "MktPrctc": {
+                "groupSourceField": "Document.AppHdr.MktPrctc",
+                "Regy": {
+                    "sourceField": "Document.AppHdr.MktPrctc.Regy"
+                },
+                "Id": {
+                    "sourceField": "Document.AppHdr.MktPrctc.Id"
+                }
+            },
+            "CreDt": {
+                "sourceField": "Document.AppHdr.CreDt"
+            },
+            "BizPrcgDt": {
+                "sourceField": "Document.AppHdr.BizPrcgDt"
+            },
+            "CpyDplct": {
+                "groupSourceField": "Document.AppHdr.CpyDplct",
+                "3": {
+                    "sourceField": "Document.AppHdr.CpyDplct.3"
+                }
+            },
+            "PssblDplct": {
+                "sourceField": "Document.AppHdr.PssblDplct"
+            },
+            "Prty": {
+                "groupSourceField": "Document.AppHdr.Prty",
+                "3": {
+                    "sourceField": "Document.AppHdr.Prty.3"
+                }
+            },
+            "Sgntr": {
+                "sourceField": "Document.AppHdr.Sgntr"
+            },
+            "Rltd": {
+                "groupSourceField": "Document.AppHdr.Rltd",
+                "CharSet": {
+                    "sourceField": "Document.AppHdr.Rltd.CharSet"
+                },
+                "Fr": {
+                    "groupSourceField": "Document.AppHdr.Rltd.Fr",
+                    "OrgId": {
+                        "sourceField": "Document.AppHdr.Rltd.Fr.OrgId"
+                    },
+                    "FIId": {
+                        "groupSourceField": "Document.AppHdr.Rltd.Fr.FIId",
+                        "FinInstnId": {
+                            "groupSourceField": "Document.AppHdr.Rltd.Fr.FIId.FinInstnId",
+                            "BICFI": {
+                                "sourceField": "Document.AppHdr.Rltd.Fr.FIId.FinInstnId.BICFI"
+                            },
+                            "ClrSysMmbId": {
+                                "groupSourceField": "Document.AppHdr.Rltd.Fr.FIId.FinInstnId.ClrSysMmbId",
+                                "ClrSysId": {
+                                    "groupSourceField": "Document.AppHdr.Rltd.Fr.FIId.FinInstnId.ClrSysMmbId.ClrSysId",
+                                    "Cd": {
+                                        "sourceField": "Document.AppHdr.Rltd.Fr.FIId.FinInstnId.ClrSysMmbId.ClrSysId.Cd"
+                                    },
+                                    "Prtry": {
+                                        "sourceField": "Document.AppHdr.Rltd.Fr.FIId.FinInstnId.ClrSysMmbId.ClrSysId.Prtry"
+                                    }
+                                },
+                                "MmbId": {
+                                    "sourceField": "Document.AppHdr.Rltd.Fr.FIId.FinInstnId.ClrSysMmbId.MmbId"
+                                }
+                            },
+                            "LEI": {
+                                "sourceField": "Document.AppHdr.Rltd.Fr.FIId.FinInstnId.LEI"
+                            },
+                            "Nm": {
+                                "sourceField": "Document.AppHdr.Rltd.Fr.FIId.FinInstnId.Nm"
+                            },
+                            "PstlAdr": {
+                                "sourceField": "Document.AppHdr.Rltd.Fr.FIId.FinInstnId.PstlAdr"
+                            },
+                            "Othr": {
+                                "sourceField": "Document.AppHdr.Rltd.Fr.FIId.FinInstnId.Othr"
+                            }
+                        },
+                        "BrnchId": {
+                            "sourceField": "Document.AppHdr.Rltd.Fr.FIId.BrnchId"
+                        }
+                    }
+                },
+                "To": {
+                    "groupSourceField": "Document.AppHdr.Rltd.To",
+                    "OrgId": {
+                        "sourceField": "Document.AppHdr.Rltd.To.OrgId"
+                    },
+                    "FIId": {
+                        "groupSourceField": "Document.AppHdr.Rltd.To.FIId",
+                        "FinInstnId": {
+                            "groupSourceField": "Document.AppHdr.Rltd.To.FIId.FinInstnId",
+                            "BICFI": {
+                                "sourceField": "Document.AppHdr.Rltd.To.FIId.FinInstnId.BICFI"
+                            },
+                            "ClrSysMmbId": {
+                                "groupSourceField": "Document.AppHdr.Rltd.To.FIId.FinInstnId.ClrSysMmbId",
+                                "ClrSysId": {
+                                    "groupSourceField": "Document.AppHdr.Rltd.To.FIId.FinInstnId.ClrSysMmbId.ClrSysId",
+                                    "Cd": {
+                                        "sourceField": "Document.AppHdr.Rltd.To.FIId.FinInstnId.ClrSysMmbId.ClrSysId.Cd"
+                                    },
+                                    "Prtry": {
+                                        "sourceField": "Document.AppHdr.Rltd.To.FIId.FinInstnId.ClrSysMmbId.ClrSysId.Prtry"
+                                    }
+                                },
+                                "MmbId": {
+                                    "sourceField": "Document.AppHdr.Rltd.To.FIId.FinInstnId.ClrSysMmbId.MmbId"
+                                }
+                            },
+                            "LEI": {
+                                "sourceField": "Document.AppHdr.Rltd.To.FIId.FinInstnId.LEI"
+                            },
+                            "Nm": {
+                                "sourceField": "Document.AppHdr.Rltd.To.FIId.FinInstnId.Nm"
+                            },
+                            "PstlAdr": {
+                                "sourceField": "Document.AppHdr.Rltd.To.FIId.FinInstnId.PstlAdr"
+                            },
+                            "Othr": {
+                                "sourceField": "Document.AppHdr.Rltd.To.FIId.FinInstnId.Othr"
+                            }
+                        },
+                        "BrnchId": {
+                            "sourceField": "Document.AppHdr.Rltd.To.FIId.BrnchId"
+                        }
+                    }
+                },
+                "BizMsgIdr": {
+                    "sourceField": "Document.AppHdr.Rltd.BizMsgIdr"
+                },
+                "MsgDefIdr": {
+                    "sourceField": "Document.AppHdr.Rltd.MsgDefIdr"
+                },
+                "BizSvc": {
+                    "sourceField": "Document.AppHdr.Rltd.BizSvc"
+                },
+                "CreDt": {
+                    "sourceField": "Document.AppHdr.Rltd.CreDt"
+                },
+                "CpyDplct": {
+                    "groupSourceField": "Document.AppHdr.Rltd.CpyDplct",
+                    "4": {
+                        "sourceField": "Document.AppHdr.Rltd.CpyDplct.4"
+                    }
+                },
+                "PssblDplct": {
+                    "sourceField": "Document.AppHdr.Rltd.PssblDplct"
+                },
+                "Prty": {
+                    "sourceField": "Document.AppHdr.Rltd.Prty"
+                },
+                "Sgntr": {
+                    "sourceField": "Document.AppHdr.Rltd.Sgntr"
+                }
+            }
+        },
+        "1": {
+            "groupSourceField": "Document.1",
+            "InvstgtnReq": {
+                "groupSourceField": "Document.1.InvstgtnReq",
+                "InvstgtnReq": {
+                    "groupSourceField": "Document.1.InvstgtnReq.InvstgtnReq",
+                    "MsgId": {
+                        "sourceField": "Document.1.InvstgtnReq.InvstgtnReq.MsgId"
+                    },
+                    "RqstrInvstgtnId": {
+                        "sourceField": "Document.1.InvstgtnReq.InvstgtnReq.RqstrInvstgtnId"
+                    },
+                    "RspndrInvstgtnId": {
+                        "sourceField": "Document.1.InvstgtnReq.InvstgtnReq.RspndrInvstgtnId"
+                    },
+                    "EIR": {
+                        "sourceField": "Document.1.InvstgtnReq.InvstgtnReq.EIR"
+                    },
+                    "ReqActn": {
+                        "groupSourceField": "Document.1.InvstgtnReq.InvstgtnReq.ReqActn",
+                        "Actn": {
+                            "groupSourceField": "Document.1.InvstgtnReq.InvstgtnReq.ReqActn.Actn",
+                            "Cd": {
+                                "sourceField": "Document.1.InvstgtnReq.InvstgtnReq.ReqActn.Actn.Cd"
+                            },
+                            "Prtry": {
+                                "sourceField": "Document.1.InvstgtnReq.InvstgtnReq.ReqActn.Actn.Prtry"
+                            }
+                        },
+                        "ActnRsn": {
+                            "groupSourceField": "Document.1.InvstgtnReq.InvstgtnReq.ReqActn.ActnRsn",
+                            "Orgtr": {
+                                "sourceField": "Document.1.InvstgtnReq.InvstgtnReq.ReqActn.ActnRsn.Orgtr"
+                            },
+                            "Rsn": {
+                                "groupSourceField": "Document.1.InvstgtnReq.InvstgtnReq.ReqActn.ActnRsn.Rsn",
+                                "Cd": {
+                                    "sourceField": "Document.1.InvstgtnReq.InvstgtnReq.ReqActn.ActnRsn.Rsn.Cd"
+                                },
+                                "Prtry": {
+                                    "sourceField": "Document.1.InvstgtnReq.InvstgtnReq.ReqActn.ActnRsn.Rsn.Prtry"
+                                }
+                            },
+                            "AddtlInf": {
+                                "sourceField": "Document.1.InvstgtnReq.InvstgtnReq.ReqActn.ActnRsn.AddtlInf"
+                            }
+                        }
+                    },
+                    "InvstgtnTp": {
+                        "groupSourceField": "Document.1.InvstgtnReq.InvstgtnReq.InvstgtnTp",
+                        "Cd": {
+                            "sourceField": "Document.1.InvstgtnReq.InvstgtnReq.InvstgtnTp.Cd"
+                        },
+                        "Prtry": {
+                            "sourceField": "Document.1.InvstgtnReq.InvstgtnReq.InvstgtnTp.Prtry"
+                        }
+                    },
+                    "InvstgtnSubTp": {
+                        "groupSourceField": "Document.1.InvstgtnReq.InvstgtnReq.InvstgtnSubTp",
+                        "Cd": {
+                            "sourceField": "Document.1.InvstgtnReq.InvstgtnReq.InvstgtnSubTp.Cd"
+                        },
+                        "Prtry": {
+                            "sourceField": "Document.1.InvstgtnReq.InvstgtnReq.InvstgtnSubTp.Prtry"
+                        }
+                    },
+                    "UndrlygInstrm": {
+                        "groupSourceField": "Document.1.InvstgtnReq.InvstgtnReq.UndrlygInstrm",
+                        "Cd": {
+                            "sourceField": "Document.1.InvstgtnReq.InvstgtnReq.UndrlygInstrm.Cd"
+                        },
+                        "Prtry": {
+                            "sourceField": "Document.1.InvstgtnReq.InvstgtnReq.UndrlygInstrm.Prtry"
+                        }
+                    },
+                    "Undrlyg": {
+                        "groupSourceField": "Document.1.InvstgtnReq.InvstgtnReq.Undrlyg",
+                        "Initn": {
+                            "groupSourceField": "Document.1.InvstgtnReq.InvstgtnReq.Undrlyg.Initn",
+                            "OrgnlGrpInf": {
+                                "groupSourceField": "Document.1.InvstgtnReq.InvstgtnReq.Undrlyg.Initn.OrgnlGrpInf",
+                                "OrgnlMsgId": {
+                                    "sourceField": "Document.1.InvstgtnReq.InvstgtnReq.Undrlyg.Initn.OrgnlGrpInf.OrgnlMsgId"
+                                },
+                                "OrgnlMsgNmId": {
+                                    "sourceField": "Document.1.InvstgtnReq.InvstgtnReq.Undrlyg.Initn.OrgnlGrpInf.OrgnlMsgNmId"
+                                },
+                                "OrgnlCreDtTm": {
+                                    "sourceField": "Document.1.InvstgtnReq.InvstgtnReq.Undrlyg.Initn.OrgnlGrpInf.OrgnlCreDtTm"
+                                },
+                                "OrgnlMsgDlvryChanl": {
+                                    "sourceField": "Document.1.InvstgtnReq.InvstgtnReq.Undrlyg.Initn.OrgnlGrpInf.OrgnlMsgDlvryChanl"
+                                }
+                            },
+                            "OrgnlPmtInfId": {
+                                "sourceField": "Document.1.InvstgtnReq.InvstgtnReq.Undrlyg.Initn.OrgnlPmtInfId"
+                            },
+                            "OrgnlInstrId": {
+                                "sourceField": "Document.1.InvstgtnReq.InvstgtnReq.Undrlyg.Initn.OrgnlInstrId"
+                            },
+                            "OrgnlEndToEndId": {
+                                "sourceField": "Document.1.InvstgtnReq.InvstgtnReq.Undrlyg.Initn.OrgnlEndToEndId"
+                            },
+                            "OrgnlUETR": {
+                                "sourceField": "Document.1.InvstgtnReq.InvstgtnReq.Undrlyg.Initn.OrgnlUETR"
+                            },
+                            "OrgnlInstdAmt": {
+                                "groupSourceField": "Document.1.InvstgtnReq.InvstgtnReq.Undrlyg.Initn.OrgnlInstdAmt",
+                                "Ccy": {
+                                    "sourceField": "Document.1.InvstgtnReq.InvstgtnReq.Undrlyg.Initn.OrgnlInstdAmt.Ccy"
+                                }
+                            },
+                            "ReqdExctnDt": {
+                                "groupSourceField": "Document.1.InvstgtnReq.InvstgtnReq.Undrlyg.Initn.ReqdExctnDt",
+                                "Dt": {
+                                    "sourceField": "Document.1.InvstgtnReq.InvstgtnReq.Undrlyg.Initn.ReqdExctnDt.Dt"
+                                },
+                                "DtTm": {
+                                    "sourceField": "Document.1.InvstgtnReq.InvstgtnReq.Undrlyg.Initn.ReqdExctnDt.DtTm"
+                                }
+                            },
+                            "ReqdColltnDt": {
+                                "sourceField": "Document.1.InvstgtnReq.InvstgtnReq.Undrlyg.Initn.ReqdColltnDt"
+                            },
+                            "OrgnlTxRef": {
+                                "sourceField": "Document.1.InvstgtnReq.InvstgtnReq.Undrlyg.Initn.OrgnlTxRef"
+                            },
+                            "OrgnlSvcLvl": {
+                                "sourceField": "Document.1.InvstgtnReq.InvstgtnReq.Undrlyg.Initn.OrgnlSvcLvl"
+                            }
+                        },
+                        "IntrBk": {
+                            "groupSourceField": "Document.1.InvstgtnReq.InvstgtnReq.Undrlyg.IntrBk",
+                            "OrgnlGrpInf": {
+                                "groupSourceField": "Document.1.InvstgtnReq.InvstgtnReq.Undrlyg.IntrBk.OrgnlGrpInf",
+                                "OrgnlMsgId": {
+                                    "sourceField": "Document.1.InvstgtnReq.InvstgtnReq.Undrlyg.IntrBk.OrgnlGrpInf.OrgnlMsgId"
+                                },
+                                "OrgnlMsgNmId": {
+                                    "sourceField": "Document.1.InvstgtnReq.InvstgtnReq.Undrlyg.IntrBk.OrgnlGrpInf.OrgnlMsgNmId"
+                                },
+                                "OrgnlCreDtTm": {
+                                    "sourceField": "Document.1.InvstgtnReq.InvstgtnReq.Undrlyg.IntrBk.OrgnlGrpInf.OrgnlCreDtTm"
+                                },
+                                "OrgnlMsgDlvryChanl": {
+                                    "sourceField": "Document.1.InvstgtnReq.InvstgtnReq.Undrlyg.IntrBk.OrgnlGrpInf.OrgnlMsgDlvryChanl"
+                                }
+                            },
+                            "OrgnlInstrId": {
+                                "sourceField": "Document.1.InvstgtnReq.InvstgtnReq.Undrlyg.IntrBk.OrgnlInstrId"
+                            },
+                            "OrgnlEndToEndId": {
+                                "sourceField": "Document.1.InvstgtnReq.InvstgtnReq.Undrlyg.IntrBk.OrgnlEndToEndId"
+                            },
+                            "OrgnlTxId": {
+                                "sourceField": "Document.1.InvstgtnReq.InvstgtnReq.Undrlyg.IntrBk.OrgnlTxId"
+                            },
+                            "OrgnlUETR": {
+                                "sourceField": "Document.1.InvstgtnReq.InvstgtnReq.Undrlyg.IntrBk.OrgnlUETR"
+                            },
+                            "OrgnlIntrBkSttlmAmt": {
+                                "groupSourceField": "Document.1.InvstgtnReq.InvstgtnReq.Undrlyg.IntrBk.OrgnlIntrBkSttlmAmt",
+                                "Ccy": {
+                                    "sourceField": "Document.1.InvstgtnReq.InvstgtnReq.Undrlyg.IntrBk.OrgnlIntrBkSttlmAmt.Ccy"
+                                }
+                            },
+                            "OrgnlIntrBkSttlmDt": {
+                                "sourceField": "Document.1.InvstgtnReq.InvstgtnReq.Undrlyg.IntrBk.OrgnlIntrBkSttlmDt"
+                            },
+                            "OrgnlTxRef": {
+                                "sourceField": "Document.1.InvstgtnReq.InvstgtnReq.Undrlyg.IntrBk.OrgnlTxRef"
+                            },
+                            "OrgnlSvcLvl": {
+                                "sourceField": "Document.1.InvstgtnReq.InvstgtnReq.Undrlyg.IntrBk.OrgnlSvcLvl"
+                            }
+                        },
+                        "StmtNtry": {
+                            "groupSourceField": "Document.1.InvstgtnReq.InvstgtnReq.Undrlyg.StmtNtry",
+                            "OrgnlAcct": {
+                                "groupSourceField": "Document.1.InvstgtnReq.InvstgtnReq.Undrlyg.StmtNtry.OrgnlAcct",
+                                "Id": {
+                                    "groupSourceField": "Document.1.InvstgtnReq.InvstgtnReq.Undrlyg.StmtNtry.OrgnlAcct.Id",
+                                    "IBAN": {
+                                        "sourceField": "Document.1.InvstgtnReq.InvstgtnReq.Undrlyg.StmtNtry.OrgnlAcct.Id.IBAN"
+                                    },
+                                    "Othr": {
+                                        "groupSourceField": "Document.1.InvstgtnReq.InvstgtnReq.Undrlyg.StmtNtry.OrgnlAcct.Id.Othr",
+                                        "Id": {
+                                            "sourceField": "Document.1.InvstgtnReq.InvstgtnReq.Undrlyg.StmtNtry.OrgnlAcct.Id.Othr.Id"
+                                        },
+                                        "SchmeNm": {
+                                            "sourceField": "Document.1.InvstgtnReq.InvstgtnReq.Undrlyg.StmtNtry.OrgnlAcct.Id.Othr.SchmeNm"
+                                        },
+                                        "Issr": {
+                                            "sourceField": "Document.1.InvstgtnReq.InvstgtnReq.Undrlyg.StmtNtry.OrgnlAcct.Id.Othr.Issr"
+                                        }
+                                    }
+                                },
+                                "Tp": {
+                                    "sourceField": "Document.1.InvstgtnReq.InvstgtnReq.Undrlyg.StmtNtry.OrgnlAcct.Tp"
+                                },
+                                "Ccy": {
+                                    "sourceField": "Document.1.InvstgtnReq.InvstgtnReq.Undrlyg.StmtNtry.OrgnlAcct.Ccy"
+                                },
+                                "Nm": {
+                                    "sourceField": "Document.1.InvstgtnReq.InvstgtnReq.Undrlyg.StmtNtry.OrgnlAcct.Nm"
+                                },
+                                "Prxy": {
+                                    "sourceField": "Document.1.InvstgtnReq.InvstgtnReq.Undrlyg.StmtNtry.OrgnlAcct.Prxy"
+                                }
+                            },
+                            "OrgnlGrpInf": {
+                                "groupSourceField": "Document.1.InvstgtnReq.InvstgtnReq.Undrlyg.StmtNtry.OrgnlGrpInf",
+                                "OrgnlMsgId": {
+                                    "sourceField": "Document.1.InvstgtnReq.InvstgtnReq.Undrlyg.StmtNtry.OrgnlGrpInf.OrgnlMsgId"
+                                },
+                                "OrgnlMsgNmId": {
+                                    "sourceField": "Document.1.InvstgtnReq.InvstgtnReq.Undrlyg.StmtNtry.OrgnlGrpInf.OrgnlMsgNmId"
+                                },
+                                "OrgnlCreDtTm": {
+                                    "sourceField": "Document.1.InvstgtnReq.InvstgtnReq.Undrlyg.StmtNtry.OrgnlGrpInf.OrgnlCreDtTm"
+                                }
+                            },
+                            "OrgnlStmtId": {
+                                "sourceField": "Document.1.InvstgtnReq.InvstgtnReq.Undrlyg.StmtNtry.OrgnlStmtId"
+                            },
+                            "OrgnlNtryRef": {
+                                "sourceField": "Document.1.InvstgtnReq.InvstgtnReq.Undrlyg.StmtNtry.OrgnlNtryRef"
+                            },
+                            "OrgnlUETR": {
+                                "sourceField": "Document.1.InvstgtnReq.InvstgtnReq.Undrlyg.StmtNtry.OrgnlUETR"
+                            },
+                            "OrgnlNtryAmt": {
+                                "groupSourceField": "Document.1.InvstgtnReq.InvstgtnReq.Undrlyg.StmtNtry.OrgnlNtryAmt",
+                                "Ccy": {
+                                    "sourceField": "Document.1.InvstgtnReq.InvstgtnReq.Undrlyg.StmtNtry.OrgnlNtryAmt.Ccy"
+                                }
+                            },
+                            "OrgnlNtryValDt": {
+                                "groupSourceField": "Document.1.InvstgtnReq.InvstgtnReq.Undrlyg.StmtNtry.OrgnlNtryValDt",
+                                "Dt": {
+                                    "sourceField": "Document.1.InvstgtnReq.InvstgtnReq.Undrlyg.StmtNtry.OrgnlNtryValDt.Dt"
+                                },
+                                "DtTm": {
+                                    "sourceField": "Document.1.InvstgtnReq.InvstgtnReq.Undrlyg.StmtNtry.OrgnlNtryValDt.DtTm"
+                                }
+                            }
+                        },
+                        "Acct": {
+                            "groupSourceField": "Document.1.InvstgtnReq.InvstgtnReq.Undrlyg.Acct",
+                            "Id": {
+                                "groupSourceField": "Document.1.InvstgtnReq.InvstgtnReq.Undrlyg.Acct.Id",
+                                "IBAN": {
+                                    "sourceField": "Document.1.InvstgtnReq.InvstgtnReq.Undrlyg.Acct.Id.IBAN"
+                                },
+                                "Othr": {
+                                    "groupSourceField": "Document.1.InvstgtnReq.InvstgtnReq.Undrlyg.Acct.Id.Othr",
+                                    "Id": {
+                                        "sourceField": "Document.1.InvstgtnReq.InvstgtnReq.Undrlyg.Acct.Id.Othr.Id"
+                                    },
+                                    "SchmeNm": {
+                                        "sourceField": "Document.1.InvstgtnReq.InvstgtnReq.Undrlyg.Acct.Id.Othr.SchmeNm"
+                                    },
+                                    "Issr": {
+                                        "sourceField": "Document.1.InvstgtnReq.InvstgtnReq.Undrlyg.Acct.Id.Othr.Issr"
+                                    }
+                                }
+                            },
+                            "Tp": {
+                                "sourceField": "Document.1.InvstgtnReq.InvstgtnReq.Undrlyg.Acct.Tp"
+                            },
+                            "Ccy": {
+                                "sourceField": "Document.1.InvstgtnReq.InvstgtnReq.Undrlyg.Acct.Ccy"
+                            },
+                            "Nm": {
+                                "sourceField": "Document.1.InvstgtnReq.InvstgtnReq.Undrlyg.Acct.Nm"
+                            },
+                            "Prxy": {
+                                "groupSourceField": "Document.1.InvstgtnReq.InvstgtnReq.Undrlyg.Acct.Prxy",
+                                "Tp": {
+                                    "groupSourceField": "Document.1.InvstgtnReq.InvstgtnReq.Undrlyg.Acct.Prxy.Tp",
+                                    "Cd": {
+                                        "sourceField": "Document.1.InvstgtnReq.InvstgtnReq.Undrlyg.Acct.Prxy.Tp.Cd"
+                                    },
+                                    "Prtry": {
+                                        "sourceField": "Document.1.InvstgtnReq.InvstgtnReq.Undrlyg.Acct.Prxy.Tp.Prtry"
+                                    }
+                                },
+                                "Id": {
+                                    "sourceField": "Document.1.InvstgtnReq.InvstgtnReq.Undrlyg.Acct.Prxy.Id"
+                                }
+                            }
+                        },
+                        "Othr": {
+                            "groupSourceField": "Document.1.InvstgtnReq.InvstgtnReq.Undrlyg.Othr",
+                            "Id": {
+                                "sourceField": "Document.1.InvstgtnReq.InvstgtnReq.Undrlyg.Othr.Id"
+                            },
+                            "SchmeNm": {
+                                "sourceField": "Document.1.InvstgtnReq.InvstgtnReq.Undrlyg.Othr.SchmeNm"
+                            },
+                            "Issr": {
+                                "sourceField": "Document.1.InvstgtnReq.InvstgtnReq.Undrlyg.Othr.Issr"
+                            }
+                        }
+                    },
+                    "Rqstr": {
+                        "groupSourceField": "Document.1.InvstgtnReq.InvstgtnReq.Rqstr",
+                        "Pty": {
+                            "sourceField": "Document.1.InvstgtnReq.InvstgtnReq.Rqstr.Pty"
+                        },
+                        "Agt": {
+                            "groupSourceField": "Document.1.InvstgtnReq.InvstgtnReq.Rqstr.Agt",
+                            "FinInstnId": {
+                                "groupSourceField": "Document.1.InvstgtnReq.InvstgtnReq.Rqstr.Agt.FinInstnId",
+                                "BICFI": {
+                                    "sourceField": "Document.1.InvstgtnReq.InvstgtnReq.Rqstr.Agt.FinInstnId.BICFI"
+                                },
+                                "ClrSysMmbId": {
+                                    "sourceField": "Document.1.InvstgtnReq.InvstgtnReq.Rqstr.Agt.FinInstnId.ClrSysMmbId"
+                                },
+                                "LEI": {
+                                    "sourceField": "Document.1.InvstgtnReq.InvstgtnReq.Rqstr.Agt.FinInstnId.LEI"
+                                },
+                                "Nm": {
+                                    "sourceField": "Document.1.InvstgtnReq.InvstgtnReq.Rqstr.Agt.FinInstnId.Nm"
+                                },
+                                "PstlAdr": {
+                                    "sourceField": "Document.1.InvstgtnReq.InvstgtnReq.Rqstr.Agt.FinInstnId.PstlAdr"
+                                },
+                                "Othr": {
+                                    "sourceField": "Document.1.InvstgtnReq.InvstgtnReq.Rqstr.Agt.FinInstnId.Othr"
+                                }
+                            },
+                            "BrnchId": {
+                                "sourceField": "Document.1.InvstgtnReq.InvstgtnReq.Rqstr.Agt.BrnchId"
+                            }
+                        }
+                    },
+                    "Rspndr": {
+                        "groupSourceField": "Document.1.InvstgtnReq.InvstgtnReq.Rspndr",
+                        "Pty": {
+                            "sourceField": "Document.1.InvstgtnReq.InvstgtnReq.Rspndr.Pty"
+                        },
+                        "Agt": {
+                            "groupSourceField": "Document.1.InvstgtnReq.InvstgtnReq.Rspndr.Agt",
+                            "FinInstnId": {
+                                "groupSourceField": "Document.1.InvstgtnReq.InvstgtnReq.Rspndr.Agt.FinInstnId",
+                                "BICFI": {
+                                    "sourceField": "Document.1.InvstgtnReq.InvstgtnReq.Rspndr.Agt.FinInstnId.BICFI"
+                                },
+                                "ClrSysMmbId": {
+                                    "sourceField": "Document.1.InvstgtnReq.InvstgtnReq.Rspndr.Agt.FinInstnId.ClrSysMmbId"
+                                },
+                                "LEI": {
+                                    "sourceField": "Document.1.InvstgtnReq.InvstgtnReq.Rspndr.Agt.FinInstnId.LEI"
+                                },
+                                "Nm": {
+                                    "sourceField": "Document.1.InvstgtnReq.InvstgtnReq.Rspndr.Agt.FinInstnId.Nm"
+                                },
+                                "PstlAdr": {
+                                    "sourceField": "Document.1.InvstgtnReq.InvstgtnReq.Rspndr.Agt.FinInstnId.PstlAdr"
+                                },
+                                "Othr": {
+                                    "sourceField": "Document.1.InvstgtnReq.InvstgtnReq.Rspndr.Agt.FinInstnId.Othr"
+                                }
+                            },
+                            "BrnchId": {
+                                "sourceField": "Document.1.InvstgtnReq.InvstgtnReq.Rspndr.Agt.BrnchId"
+                            }
+                        }
+                    },
+                    "ReqOrgtr": {
+                        "groupSourceField": "Document.1.InvstgtnReq.InvstgtnReq.ReqOrgtr",
+                        "Pty": {
+                            "sourceField": "Document.1.InvstgtnReq.InvstgtnReq.ReqOrgtr.Pty"
+                        },
+                        "Agt": {
+                            "groupSourceField": "Document.1.InvstgtnReq.InvstgtnReq.ReqOrgtr.Agt",
+                            "FinInstnId": {
+                                "groupSourceField": "Document.1.InvstgtnReq.InvstgtnReq.ReqOrgtr.Agt.FinInstnId",
+                                "BICFI": {
+                                    "sourceField": "Document.1.InvstgtnReq.InvstgtnReq.ReqOrgtr.Agt.FinInstnId.BICFI"
+                                },
+                                "ClrSysMmbId": {
+                                    "sourceField": "Document.1.InvstgtnReq.InvstgtnReq.ReqOrgtr.Agt.FinInstnId.ClrSysMmbId"
+                                },
+                                "LEI": {
+                                    "sourceField": "Document.1.InvstgtnReq.InvstgtnReq.ReqOrgtr.Agt.FinInstnId.LEI"
+                                },
+                                "Nm": {
+                                    "sourceField": "Document.1.InvstgtnReq.InvstgtnReq.ReqOrgtr.Agt.FinInstnId.Nm"
+                                },
+                                "PstlAdr": {
+                                    "sourceField": "Document.1.InvstgtnReq.InvstgtnReq.ReqOrgtr.Agt.FinInstnId.PstlAdr"
+                                },
+                                "Othr": {
+                                    "sourceField": "Document.1.InvstgtnReq.InvstgtnReq.ReqOrgtr.Agt.FinInstnId.Othr"
+                                }
+                            },
+                            "BrnchId": {
+                                "sourceField": "Document.1.InvstgtnReq.InvstgtnReq.ReqOrgtr.Agt.BrnchId"
+                            }
+                        }
+                    },
+                    "XpctdRspndr": {
+                        "sourceField": "Document.1.InvstgtnReq.InvstgtnReq.XpctdRspndr"
+                    },
+                    "SvcLvl": {
+                        "groupSourceField": "Document.1.InvstgtnReq.InvstgtnReq.SvcLvl",
+                        "Cd": {
+                            "sourceField": "Document.1.InvstgtnReq.InvstgtnReq.SvcLvl.Cd"
+                        },
+                        "Prtry": {
+                            "sourceField": "Document.1.InvstgtnReq.InvstgtnReq.SvcLvl.Prtry"
+                        }
+                    }
+                },
+                "InvstgtnData": {
+                    "groupSourceField": "Document.1.InvstgtnReq.InvstgtnData",
+                    "Seq": {
+                        "sourceField": "Document.1.InvstgtnReq.InvstgtnData.Seq"
+                    },
+                    "Rsn": {
+                        "groupSourceField": "Document.1.InvstgtnReq.InvstgtnData.Rsn",
+                        "Cd": {
+                            "sourceField": "Document.1.InvstgtnReq.InvstgtnData.Rsn.Cd"
+                        },
+                        "Prtry": {
+                            "sourceField": "Document.1.InvstgtnReq.InvstgtnData.Rsn.Prtry"
+                        }
+                    },
+                    "RsnSubTp": {
+                        "groupSourceField": "Document.1.InvstgtnReq.InvstgtnData.RsnSubTp",
+                        "Cd": {
+                            "sourceField": "Document.1.InvstgtnReq.InvstgtnData.RsnSubTp.Cd"
+                        },
+                        "Prtry": {
+                            "sourceField": "Document.1.InvstgtnReq.InvstgtnData.RsnSubTp.Prtry"
+                        }
+                    },
+                    "AddtlReqData": {
+                        "groupSourceField": "Document.1.InvstgtnReq.InvstgtnData.AddtlReqData",
+                        "ReqdDbtAuthstn": {
+                            "sourceField": "Document.1.InvstgtnReq.InvstgtnData.AddtlReqData.ReqdDbtAuthstn"
+                        },
+                        "ReqdCompstn": {
+                            "sourceField": "Document.1.InvstgtnReq.InvstgtnData.AddtlReqData.ReqdCompstn"
+                        },
+                        "ReqdValtn": {
+                            "sourceField": "Document.1.InvstgtnReq.InvstgtnData.AddtlReqData.ReqdValtn"
+                        },
+                        "ReqNrrtv": {
+                            "sourceField": "Document.1.InvstgtnReq.InvstgtnData.AddtlReqData.ReqNrrtv"
+                        }
+                    },
+                    "RltdInvstgtnData": {
+                        "sourceField": "Document.1.InvstgtnReq.InvstgtnData.RltdInvstgtnData"
+                    },
+                    "NclsdFile": {
+                        "sourceField": "Document.1.InvstgtnReq.InvstgtnData.NclsdFile"
+                    },
+                    "RltdFileData": {
+                        "sourceField": "Document.1.InvstgtnReq.InvstgtnData.RltdFileData"
+                    }
+                },
+                "SplmtryData": {
+                    "sourceField": "Document.1.InvstgtnReq.SplmtryData"
+                }
+            }
+        }
+    }
