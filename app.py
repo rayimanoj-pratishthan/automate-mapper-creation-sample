@@ -27,4 +27,4 @@ print(min_list)
 df["min"] = min_list
 df["max"] = max_list
 
-df.to_csv("test.csv")
+print(df.head())
