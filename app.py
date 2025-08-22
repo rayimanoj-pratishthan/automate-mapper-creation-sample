@@ -1,10 +1,10 @@
 import pandas as pd
 
 # Convert dictionary to a DataFrame
-df = pd.read_csv("test.csv")
+df = pd.read_csv("csv-files/test.csv")
 min_list = []
 max_list = []
-with open("input.txt","r") as f:
+with open("text-files/input.txt", "r") as f:
     for line in f:
         line = line.strip()
         min_occur = None
