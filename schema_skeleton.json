@@ -1,0 +1,155 @@
+{
+  "Document": {
+    "InvstgtnReq": {
+      "InvstgtnReq": {
+        "MsgId": "",
+        "RqstrInvstgtnId": "",
+        "RspndrInvstgtnId": "",
+        "EIR": "",
+        "ReqActn": {
+          "Actn": {
+            "Cd": ""
+          },
+          "ActnRsn": {
+            "Rsn": {
+              "Cd": ""
+            },
+            "AddtlInf": [
+              ""
+            ]
+          }
+        },
+        "InvstgtnTp": {
+          "Cd": ""
+        },
+        "InvstgtnSubTp": {
+          "Cd": ""
+        },
+        "UndrlygInstrm": {
+          "Cd": ""
+        },
+        "Undrlyg": {
+          "Initn": {
+            "OrgnlGrpInf": {
+              "OrgnlMsgId": "",
+              "OrgnlMsgNmId": "",
+              "OrgnlCreDtTm": "",
+              "OrgnlMsgDlvryChanl": ""
+            },
+            "OrgnlPmtInfId": "",
+            "OrgnlInstrId": "",
+            "OrgnlEndToEndId": "",
+            "OrgnlUETR": "",
+            "OrgnlInstdAmt": {
+              "@Ccy": ""
+            },
+            "ReqdExctnDt": {
+              "Dt": ""
+            },
+            "ReqdColltnDt": ""
+          },
+          "IntrBk": {
+            "OrgnlGrpInf": {
+              "OrgnlMsgId": "",
+              "OrgnlMsgNmId": "",
+              "OrgnlCreDtTm": "",
+              "OrgnlMsgDlvryChanl": ""
+            },
+            "OrgnlInstrId": "",
+            "OrgnlEndToEndId": "",
+            "OrgnlTxId": "",
+            "OrgnlUETR": "",
+            "OrgnlIntrBkSttlmAmt": {
+              "@Ccy": ""
+            },
+            "OrgnlIntrBkSttlmDt": ""
+          },
+          "StmtNtry": {
+            "OrgnlAcct": {
+              "Id": {
+                "IBAN": "",
+                "Othr": {
+                  "Id": ""
+                }
+              },
+              "Ccy": ""
+            },
+            "OrgnlGrpInf": {
+              "OrgnlMsgId": "",
+              "OrgnlMsgNmId": "",
+              "OrgnlCreDtTm": ""
+            },
+            "OrgnlStmtId": "",
+            "OrgnlNtryRef": "",
+            "OrgnlUETR": "",
+            "OrgnlNtryAmt": {
+              "@Ccy": ""
+            },
+            "OrgnlNtryValDt": {
+              "Dt": ""
+            }
+          },
+          "Acct": {
+            "Id": {
+              "IBAN": "",
+              "Othr": {
+                "Id": ""
+              }
+            },
+            "Ccy": "",
+            "Prxy": {
+              "Tp": {
+                "Cd": "",
+                "Prtry": ""
+              },
+              "Id": ""
+            }
+          },
+          "Othr": {
+            "Id": "",
+            "SchmeNm": "",
+            "Issr": ""
+          }
+        },
+        "Rqstr": {
+          "Agt": {
+            "FinInstnId": {
+              "BICFI": ""
+            }
+          }
+        },
+        "Rspndr": {
+          "Agt": {
+            "FinInstnId": {
+              "BICFI": ""
+            }
+          }
+        },
+        "ReqOrgtr": {
+          "Agt": {
+            "FinInstnId": {
+              "BICFI": ""
+            }
+          }
+        },
+        "SvcLvl": {
+          "Cd": ""
+        }
+      },
+      "InvstgtnData": [
+        {
+          "Seq": "",
+          "Rsn": {
+            "Cd": ""
+          },
+          "RsnSubTp": {
+            "Cd": ""
+          },
+          "AddtlReqData": {
+            "ReqNrrtv": ""
+          }
+        }
+      ]
+    }
+  }
+}
