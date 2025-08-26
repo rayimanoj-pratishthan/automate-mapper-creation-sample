@@ -26,5 +26,7 @@ print(min_list)
 
 df["min"] = min_list
 df["max"] = max_list
+df.to_csv("csv-files/test.csv", index=False)
+print("✅ Overwritten csv-files/test.csv")
 
 print(df.head())
