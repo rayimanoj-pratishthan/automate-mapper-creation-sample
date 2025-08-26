@@ -36,7 +36,7 @@ def xsd_to_json_schema(xsd_file, root_element=None):
                 for child in element.type.content.iter_elements():
                     key = strip_ns(child.name)
                     if child.max_occurs is None or child.max_occurs > 1:
-                        obj[key] = [build_json(child)]
+                        obj[key] = build_json(child)
                     else:
                         obj[key] = build_json(child)
 
@@ -69,8 +69,8 @@ def save_json(data, filename="output.json"):
 
 if __name__ == "__main__":
     # Example usage
-    xsd_path = "SwiftCase-Investigations-SR2025_RQFI_COMP_UGs_InvestigationRequest_SR2025_20250323_1023_iso15enriched.xsd"
+    xsd_path = "xsd-files/SwiftCase-Investigations-SR2025_RQFI_COMP_UGs_InvestigationRequest_SR2025_20250323_1023_iso15enriched.xsd"
     json_skeleton = xsd_to_json_schema(xsd_path)
 
     # Save to file
-    save_json(json_skeleton, "schema_skeleton.json")
+    save_json(json_skeleton, "json-files/schema_skeleton.json")

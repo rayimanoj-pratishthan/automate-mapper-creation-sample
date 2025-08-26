@@ -14,9 +14,7 @@
             "Rsn": {
               "Cd": ""
             },
-            "AddtlInf": [
-              ""
-            ]
+            "AddtlInf": ""
           }
         },
         "InvstgtnTp": {
@@ -136,20 +134,18 @@
           "Cd": ""
         }
       },
-      "InvstgtnData": [
-        {
-          "Seq": "",
-          "Rsn": {
-            "Cd": ""
-          },
-          "RsnSubTp": {
-            "Cd": ""
-          },
-          "AddtlReqData": {
-            "ReqNrrtv": ""
-          }
+      "InvstgtnData": {
+        "Seq": "",
+        "Rsn": {
+          "Cd": ""
+        },
+        "RsnSubTp": {
+          "Cd": ""
+        },
+        "AddtlReqData": {
+          "ReqNrrtv": ""
         }
-      ]
+      }
     }
   }
 }
