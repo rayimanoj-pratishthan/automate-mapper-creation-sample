@@ -109,7 +109,7 @@ def parse_xsd(file_path):
 
 
 if __name__ == "__main__":
-    xsd_file = "xsd-files/SwiftCase-Investigations-SR2025_RQFI_COMP_UGs_InvestigationRequest_SR2025_20250323_1023_iso15enriched.xsd"
+    xsd_file = "xsd-files/SwiftCase-Investigations-SR2025_RQFI_UTEX_UGs_InvestigationResponse_SR2025_20250323_1033_iso15enriched.xsd"
     json_output = parse_xsd(xsd_file)
 
     with open("elements.json", "w") as f:
