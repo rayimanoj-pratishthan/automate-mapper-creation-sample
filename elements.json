@@ -1,0 +1,393 @@
+{
+    "Document": {
+        "InvstgtnReq": {
+            "InvstgtnReq": {
+                "MsgId": {
+                    "sourceField": "Document.InvstgtnReq.InvstgtnReq.MsgId"
+                },
+                "RqstrInvstgtnId": {
+                    "sourceField": "Document.InvstgtnReq.InvstgtnReq.RqstrInvstgtnId"
+                },
+                "RspndrInvstgtnId": {
+                    "minOccurs": 0,
+                    "maxOccurs": 1,
+                    "sourceField": "Document.InvstgtnReq.InvstgtnReq.RspndrInvstgtnId"
+                },
+                "EIR": {
+                    "minOccurs": 0,
+                    "maxOccurs": 1,
+                    "sourceField": "Document.InvstgtnReq.InvstgtnReq.EIR"
+                },
+                "ReqActn": {
+                    "minOccurs": 0,
+                    "maxOccurs": 1,
+                    "Actn": {
+                        "Cd": {
+                            "sourceField": "Document.InvstgtnReq.InvstgtnReq.ReqActn.Actn.Cd"
+                        },
+                        "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.ReqActn.Actn"
+                    },
+                    "ActnRsn": {
+                        "minOccurs": 0,
+                        "maxOccurs": 1,
+                        "Rsn": {
+                            "Cd": {
+                                "sourceField": "Document.InvstgtnReq.InvstgtnReq.ReqActn.ActnRsn.Rsn.Cd"
+                            },
+                            "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.ReqActn.ActnRsn.Rsn"
+                        },
+                        "AddtlInf": {
+                            "minOccurs": 0,
+                            "maxOccurs": 2,
+                            "sourceField": "Document.InvstgtnReq.InvstgtnReq.ReqActn.ActnRsn.AddtlInf"
+                        },
+                        "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.ReqActn.ActnRsn"
+                    },
+                    "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.ReqActn"
+                },
+                "InvstgtnTp": {
+                    "Cd": {
+                        "sourceField": "Document.InvstgtnReq.InvstgtnReq.InvstgtnTp.Cd"
+                    },
+                    "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.InvstgtnTp"
+                },
+                "InvstgtnSubTp": {
+                    "Cd": {
+                        "sourceField": "Document.InvstgtnReq.InvstgtnReq.InvstgtnSubTp.Cd"
+                    },
+                    "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.InvstgtnSubTp"
+                },
+                "UndrlygInstrm": {
+                    "Cd": {
+                        "sourceField": "Document.InvstgtnReq.InvstgtnReq.UndrlygInstrm.Cd"
+                    },
+                    "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.UndrlygInstrm"
+                },
+                "Undrlyg": {
+                    "Initn": {
+                        "OrgnlGrpInf": {
+                            "minOccurs": 0,
+                            "maxOccurs": 1,
+                            "OrgnlMsgId": {
+                                "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.Initn.OrgnlGrpInf.OrgnlMsgId"
+                            },
+                            "OrgnlMsgNmId": {
+                                "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.Initn.OrgnlGrpInf.OrgnlMsgNmId"
+                            },
+                            "OrgnlCreDtTm": {
+                                "minOccurs": 0,
+                                "maxOccurs": 1,
+                                "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.Initn.OrgnlGrpInf.OrgnlCreDtTm"
+                            },
+                            "OrgnlMsgDlvryChanl": {
+                                "minOccurs": 0,
+                                "maxOccurs": 1,
+                                "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.Initn.OrgnlGrpInf.OrgnlMsgDlvryChanl"
+                            },
+                            "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.Initn.OrgnlGrpInf"
+                        },
+                        "OrgnlPmtInfId": {
+                            "minOccurs": 0,
+                            "maxOccurs": 1,
+                            "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.Initn.OrgnlPmtInfId"
+                        },
+                        "OrgnlInstrId": {
+                            "minOccurs": 0,
+                            "maxOccurs": 1,
+                            "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.Initn.OrgnlInstrId"
+                        },
+                        "OrgnlEndToEndId": {
+                            "minOccurs": 0,
+                            "maxOccurs": 1,
+                            "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.Initn.OrgnlEndToEndId"
+                        },
+                        "OrgnlUETR": {
+                            "minOccurs": 0,
+                            "maxOccurs": 1,
+                            "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.Initn.OrgnlUETR"
+                        },
+                        "OrgnlInstdAmt": {
+                            "minOccurs": 0,
+                            "maxOccurs": 1,
+                            "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.Initn.OrgnlInstdAmt"
+                        },
+                        "ReqdExctnDt": {
+                            "minOccurs": 0,
+                            "maxOccurs": 1,
+                            "Dt": {
+                                "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.Initn.ReqdExctnDt.Dt"
+                            },
+                            "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.Initn.ReqdExctnDt"
+                        },
+                        "ReqdColltnDt": {
+                            "minOccurs": 0,
+                            "maxOccurs": 1,
+                            "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.Initn.ReqdColltnDt"
+                        },
+                        "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.Initn"
+                    },
+                    "IntrBk": {
+                        "OrgnlGrpInf": {
+                            "minOccurs": 0,
+                            "maxOccurs": 1,
+                            "OrgnlMsgId": {
+                                "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.IntrBk.OrgnlGrpInf.OrgnlMsgId"
+                            },
+                            "OrgnlMsgNmId": {
+                                "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.IntrBk.OrgnlGrpInf.OrgnlMsgNmId"
+                            },
+                            "OrgnlCreDtTm": {
+                                "minOccurs": 0,
+                                "maxOccurs": 1,
+                                "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.IntrBk.OrgnlGrpInf.OrgnlCreDtTm"
+                            },
+                            "OrgnlMsgDlvryChanl": {
+                                "minOccurs": 0,
+                                "maxOccurs": 1,
+                                "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.IntrBk.OrgnlGrpInf.OrgnlMsgDlvryChanl"
+                            },
+                            "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.IntrBk.OrgnlGrpInf"
+                        },
+                        "OrgnlInstrId": {
+                            "minOccurs": 0,
+                            "maxOccurs": 1,
+                            "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.IntrBk.OrgnlInstrId"
+                        },
+                        "OrgnlEndToEndId": {
+                            "minOccurs": 0,
+                            "maxOccurs": 1,
+                            "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.IntrBk.OrgnlEndToEndId"
+                        },
+                        "OrgnlTxId": {
+                            "minOccurs": 0,
+                            "maxOccurs": 1,
+                            "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.IntrBk.OrgnlTxId"
+                        },
+                        "OrgnlUETR": {
+                            "minOccurs": 0,
+                            "maxOccurs": 1,
+                            "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.IntrBk.OrgnlUETR"
+                        },
+                        "OrgnlIntrBkSttlmAmt": {
+                            "minOccurs": 0,
+                            "maxOccurs": 1,
+                            "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.IntrBk.OrgnlIntrBkSttlmAmt"
+                        },
+                        "OrgnlIntrBkSttlmDt": {
+                            "minOccurs": 0,
+                            "maxOccurs": 1,
+                            "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.IntrBk.OrgnlIntrBkSttlmDt"
+                        },
+                        "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.IntrBk"
+                    },
+                    "StmtNtry": {
+                        "OrgnlAcct": {
+                            "minOccurs": 0,
+                            "maxOccurs": 1,
+                            "Id": {
+                                "minOccurs": 0,
+                                "maxOccurs": 1,
+                                "IBAN": {
+                                    "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.StmtNtry.OrgnlAcct.Id.IBAN"
+                                },
+                                "Othr": {
+                                    "Id": {
+                                        "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.StmtNtry.OrgnlAcct.Id.Othr.Id"
+                                    },
+                                    "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.StmtNtry.OrgnlAcct.Id.Othr"
+                                },
+                                "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.StmtNtry.OrgnlAcct.Id"
+                            },
+                            "Ccy": {
+                                "minOccurs": 0,
+                                "maxOccurs": 1,
+                                "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.StmtNtry.OrgnlAcct.Ccy"
+                            },
+                            "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.StmtNtry.OrgnlAcct"
+                        },
+                        "OrgnlGrpInf": {
+                            "minOccurs": 0,
+                            "maxOccurs": 1,
+                            "OrgnlMsgId": {
+                                "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.StmtNtry.OrgnlGrpInf.OrgnlMsgId"
+                            },
+                            "OrgnlMsgNmId": {
+                                "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.StmtNtry.OrgnlGrpInf.OrgnlMsgNmId"
+                            },
+                            "OrgnlCreDtTm": {
+                                "minOccurs": 0,
+                                "maxOccurs": 1,
+                                "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.StmtNtry.OrgnlGrpInf.OrgnlCreDtTm"
+                            },
+                            "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.StmtNtry.OrgnlGrpInf"
+                        },
+                        "OrgnlStmtId": {
+                            "minOccurs": 0,
+                            "maxOccurs": 1,
+                            "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.StmtNtry.OrgnlStmtId"
+                        },
+                        "OrgnlNtryRef": {
+                            "minOccurs": 0,
+                            "maxOccurs": 1,
+                            "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.StmtNtry.OrgnlNtryRef"
+                        },
+                        "OrgnlUETR": {
+                            "minOccurs": 0,
+                            "maxOccurs": 1,
+                            "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.StmtNtry.OrgnlUETR"
+                        },
+                        "OrgnlNtryAmt": {
+                            "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.StmtNtry.OrgnlNtryAmt"
+                        },
+                        "OrgnlNtryValDt": {
+                            "Dt": {
+                                "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.StmtNtry.OrgnlNtryValDt.Dt"
+                            },
+                            "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.StmtNtry.OrgnlNtryValDt"
+                        },
+                        "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.StmtNtry"
+                    },
+                    "Acct": {
+                        "Id": {
+                            "minOccurs": 0,
+                            "maxOccurs": 1,
+                            "IBAN": {
+                                "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.Acct.Id.IBAN"
+                            },
+                            "Othr": {
+                                "Id": {
+                                    "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.Acct.Id.Othr.Id"
+                                },
+                                "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.Acct.Id.Othr"
+                            },
+                            "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.Acct.Id"
+                        },
+                        "Ccy": {
+                            "minOccurs": 0,
+                            "maxOccurs": 1,
+                            "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.Acct.Ccy"
+                        },
+                        "Prxy": {
+                            "minOccurs": 0,
+                            "maxOccurs": 1,
+                            "Tp": {
+                                "minOccurs": 0,
+                                "maxOccurs": 1,
+                                "Cd": {
+                                    "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.Acct.Prxy.Tp.Cd"
+                                },
+                                "Prtry": {
+                                    "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.Acct.Prxy.Tp.Prtry"
+                                },
+                                "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.Acct.Prxy.Tp"
+                            },
+                            "Id": {
+                                "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.Acct.Prxy.Id"
+                            },
+                            "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.Acct.Prxy"
+                        },
+                        "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.Acct"
+                    },
+                    "Othr": {
+                        "Id": {
+                            "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.Othr.Id"
+                        },
+                        "SchmeNm": {
+                            "minOccurs": 0,
+                            "maxOccurs": 1,
+                            "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.Othr.SchmeNm"
+                        },
+                        "Issr": {
+                            "minOccurs": 0,
+                            "maxOccurs": 1,
+                            "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.Othr.Issr"
+                        },
+                        "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.Othr"
+                    },
+                    "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg"
+                },
+                "Rqstr": {
+                    "Agt": {
+                        "FinInstnId": {
+                            "BICFI": {
+                                "sourceField": "Document.InvstgtnReq.InvstgtnReq.Rqstr.Agt.FinInstnId.BICFI"
+                            },
+                            "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.Rqstr.Agt.FinInstnId"
+                        },
+                        "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.Rqstr.Agt"
+                    },
+                    "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.Rqstr"
+                },
+                "Rspndr": {
+                    "Agt": {
+                        "FinInstnId": {
+                            "BICFI": {
+                                "sourceField": "Document.InvstgtnReq.InvstgtnReq.Rspndr.Agt.FinInstnId.BICFI"
+                            },
+                            "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.Rspndr.Agt.FinInstnId"
+                        },
+                        "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.Rspndr.Agt"
+                    },
+                    "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.Rspndr"
+                },
+                "ReqOrgtr": {
+                    "minOccurs": 0,
+                    "maxOccurs": 1,
+                    "Agt": {
+                        "FinInstnId": {
+                            "BICFI": {
+                                "sourceField": "Document.InvstgtnReq.InvstgtnReq.ReqOrgtr.Agt.FinInstnId.BICFI"
+                            },
+                            "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.ReqOrgtr.Agt.FinInstnId"
+                        },
+                        "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.ReqOrgtr.Agt"
+                    },
+                    "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.ReqOrgtr"
+                },
+                "SvcLvl": {
+                    "minOccurs": 0,
+                    "maxOccurs": 1,
+                    "Cd": {
+                        "sourceField": "Document.InvstgtnReq.InvstgtnReq.SvcLvl.Cd"
+                    },
+                    "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.SvcLvl"
+                },
+                "groupSourceField": "Document.InvstgtnReq.InvstgtnReq"
+            },
+            "InvstgtnData": {
+                "minOccurs": 1,
+                "maxOccurs": "unbounded",
+                "Seq": {
+                    "minOccurs": 0,
+                    "maxOccurs": 1,
+                    "sourceField": "Document.InvstgtnReq.InvstgtnData.Seq"
+                },
+                "Rsn": {
+                    "Cd": {
+                        "sourceField": "Document.InvstgtnReq.InvstgtnData.Rsn.Cd"
+                    },
+                    "groupSourceField": "Document.InvstgtnReq.InvstgtnData.Rsn"
+                },
+                "RsnSubTp": {
+                    "minOccurs": 0,
+                    "maxOccurs": 1,
+                    "Cd": {
+                        "sourceField": "Document.InvstgtnReq.InvstgtnData.RsnSubTp.Cd"
+                    },
+                    "groupSourceField": "Document.InvstgtnReq.InvstgtnData.RsnSubTp"
+                },
+                "AddtlReqData": {
+                    "minOccurs": 0,
+                    "maxOccurs": 1,
+                    "ReqNrrtv": {
+                        "sourceField": "Document.InvstgtnReq.InvstgtnData.AddtlReqData.ReqNrrtv"
+                    },
+                    "groupSourceField": "Document.InvstgtnReq.InvstgtnData.AddtlReqData"
+                },
+                "groupSourceField": "Document.InvstgtnReq.InvstgtnData"
+            },
+            "groupSourceField": "Document.InvstgtnReq"
+        },
+        "groupSourceField": "Document"
+    }
+}
