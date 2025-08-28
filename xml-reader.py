@@ -41,6 +41,13 @@ def parse_xsd(file_path):
         if name:
             complex_types[name] = ctype
 
+    # 🔑 Collect simpleType definitions too
+    simple_types = {}
+    for stype in root.findall("xs:simpleType", ns):
+        name = stype.get("name")
+        if name:
+            simple_types[name] = parse_restrictions(stype)
+
     def walk_element(parent_dict, parent_path, elem):
         name = elem.get("name")
         etype = elem.get("type")
@@ -72,17 +79,13 @@ def parse_xsd(file_path):
             else:
                 parent_dict[name]["sourceField"] = full_path
 
-            # Check for restrictions directly on element
+            # 🔑 restrictions (priority: inline > referenced simpleType)
             restr = parse_restrictions(elem)
+            if not restr and etype in simple_types:
+                restr = simple_types[etype]
+
             if restr:
                 parent_dict[name].update(restr)
-
-            # Check inline simpleType restrictions
-            simple_type = elem.find("xs:simpleType", ns)
-            if simple_type is not None:
-                restr = parse_restrictions(simple_type)
-                if restr:
-                    parent_dict[name].update(restr)
 
     def walk_complex_type(parent_dict, parent_path, ctype):
         has_children = False
@@ -111,4 +114,3 @@ if __name__ == "__main__":
 
     with open("elements.json", "w") as f:
         json.dump(json_output, f, indent=4)
-
