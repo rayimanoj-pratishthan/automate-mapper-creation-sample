@@ -21,7 +21,9 @@ def parse_restrictions(elem):
 
         # pattern
         for p in restriction.findall("xs:pattern", ns):
-            restrictions.setdefault("patterns", []).append(p.get("value"))
+            restrictions.setdefault("expression", {
+                "regex":p.get("value")
+            })
 
         # enumeration
         for e in restriction.findall("xs:enumeration", ns):
