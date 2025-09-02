@@ -1,6 +1,6 @@
 import xml.etree.ElementTree as ET
 import json
-
+from collections import OrderedDict
 ns = {"xs": "http://www.w3.org/2001/XMLSchema"}
 
 
@@ -61,7 +61,11 @@ def parse_xsd(file_path):
             full_path = f"{parent_path}.{name}" if parent_path else name
 
             # insert this element in parent dict
-            parent_dict[name] = {}
+            parent_dict[name] = OrderedDict()
+
+            parent_dict[name]["groupSourceField"] = None
+            parent_dict[name]["sourceField"] = None
+
             if min_occurs is not None:
                 parent_dict[name]["minOccurs"] = int(min_occurs)
             if max_occurs is not None:
@@ -78,8 +82,10 @@ def parse_xsd(file_path):
             # mark groupSourceField vs sourceField
             if has_children:
                 parent_dict[name]["groupSourceField"] = full_path
+                parent_dict[name].pop("sourceField")
             else:
                 parent_dict[name]["sourceField"] = full_path
+                parent_dict[name].pop("groupSourceField")
 
             # 🔑 restrictions (priority: inline > referenced simpleType)
             restr = parse_restrictions(elem)
@@ -107,6 +113,7 @@ def parse_xsd(file_path):
     for elem in root.findall("xs:element", ns):
         walk_element(result, "", elem)
 
+    print(result)
     return result
 
 

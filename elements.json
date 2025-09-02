@@ -1,9 +1,10 @@
 {
     "Document": {
-        "minOccurs": 1,
-        "maxOccurs": 1,
+        "groupSourceField": "Document",
         "InvstgtnReq": {
+            "groupSourceField": "Document.InvstgtnReq",
             "InvstgtnReq": {
+                "groupSourceField": "Document.InvstgtnReq.InvstgtnReq",
                 "MsgId": {
                     "sourceField": "Document.InvstgtnReq.InvstgtnReq.MsgId",
                     "base": "xs:string",
@@ -23,9 +24,9 @@
                     }
                 },
                 "RspndrInvstgtnId": {
+                    "sourceField": "Document.InvstgtnReq.InvstgtnReq.RspndrInvstgtnId",
                     "minOccurs": 0,
                     "maxOccurs": 1,
-                    "sourceField": "Document.InvstgtnReq.InvstgtnReq.RspndrInvstgtnId",
                     "base": "xs:string",
                     "minLength": "1",
                     "maxLength": "16",
@@ -34,84 +35,87 @@
                     }
                 },
                 "EIR": {
+                    "sourceField": "Document.InvstgtnReq.InvstgtnReq.EIR",
                     "minOccurs": 0,
                     "maxOccurs": 1,
-                    "sourceField": "Document.InvstgtnReq.InvstgtnReq.EIR",
                     "base": "xs:string",
                     "expression": {
                         "regex": "[a-f0-9]{8}-[a-f0-9]{4}-4[a-f0-9]{3}-[89ab][a-f0-9]{3}-[a-f0-9]{12}"
                     }
                 },
                 "ReqActn": {
+                    "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.ReqActn",
                     "minOccurs": 0,
                     "maxOccurs": 1,
                     "Actn": {
+                        "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.ReqActn.Actn",
                         "Cd": {
                             "sourceField": "Document.InvstgtnReq.InvstgtnReq.ReqActn.Actn.Cd",
                             "base": "xs:string",
                             "minLength": "1",
                             "maxLength": "4"
-                        },
-                        "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.ReqActn.Actn"
+                        }
                     },
                     "ActnRsn": {
+                        "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.ReqActn.ActnRsn",
                         "minOccurs": 0,
                         "maxOccurs": 1,
                         "Rsn": {
+                            "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.ReqActn.ActnRsn.Rsn",
                             "Cd": {
                                 "sourceField": "Document.InvstgtnReq.InvstgtnReq.ReqActn.ActnRsn.Rsn.Cd",
                                 "base": "xs:string",
                                 "minLength": "1",
                                 "maxLength": "4"
-                            },
-                            "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.ReqActn.ActnRsn.Rsn"
+                            }
                         },
                         "AddtlInf": {
+                            "sourceField": "Document.InvstgtnReq.InvstgtnReq.ReqActn.ActnRsn.AddtlInf",
                             "minOccurs": 0,
                             "maxOccurs": 2,
-                            "sourceField": "Document.InvstgtnReq.InvstgtnReq.ReqActn.ActnRsn.AddtlInf",
                             "base": "xs:string",
                             "minLength": "1",
                             "maxLength": "105",
                             "expression": {
                                 "regex": "[0-9a-zA-Z/\\-\\?:\\(\\)\\.,'\\+ ]+"
                             }
-                        },
-                        "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.ReqActn.ActnRsn"
-                    },
-                    "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.ReqActn"
+                        }
+                    }
                 },
                 "InvstgtnTp": {
+                    "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.InvstgtnTp",
                     "Cd": {
                         "sourceField": "Document.InvstgtnReq.InvstgtnReq.InvstgtnTp.Cd",
                         "base": "xs:string",
                         "enumerations": [
                             "RQFI"
                         ]
-                    },
-                    "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.InvstgtnTp"
+                    }
                 },
                 "InvstgtnSubTp": {
+                    "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.InvstgtnSubTp",
                     "Cd": {
                         "sourceField": "Document.InvstgtnReq.InvstgtnReq.InvstgtnSubTp.Cd",
                         "base": "xs:string",
                         "minLength": "1",
                         "maxLength": "4"
-                    },
-                    "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.InvstgtnSubTp"
+                    }
                 },
                 "UndrlygInstrm": {
+                    "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.UndrlygInstrm",
                     "Cd": {
                         "sourceField": "Document.InvstgtnReq.InvstgtnReq.UndrlygInstrm.Cd",
                         "base": "xs:string",
                         "minLength": "1",
                         "maxLength": "4"
-                    },
-                    "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.UndrlygInstrm"
+                    }
                 },
                 "Undrlyg": {
+                    "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg",
                     "Initn": {
+                        "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.Initn",
                         "OrgnlGrpInf": {
+                            "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.Initn.OrgnlGrpInf",
                             "minOccurs": 0,
                             "maxOccurs": 1,
                             "OrgnlMsgId": {
@@ -133,31 +137,30 @@
                                 }
                             },
                             "OrgnlCreDtTm": {
+                                "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.Initn.OrgnlGrpInf.OrgnlCreDtTm",
                                 "minOccurs": 0,
                                 "maxOccurs": 1,
-                                "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.Initn.OrgnlGrpInf.OrgnlCreDtTm",
                                 "base": "xs:dateTime",
                                 "expression": {
                                     "regex": ".*(\\+|-)((0[0-9])|(1[0-3])):[0-5][0-9]"
                                 }
                             },
                             "OrgnlMsgDlvryChanl": {
+                                "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.Initn.OrgnlGrpInf.OrgnlMsgDlvryChanl",
                                 "minOccurs": 0,
                                 "maxOccurs": 1,
-                                "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.Initn.OrgnlGrpInf.OrgnlMsgDlvryChanl",
                                 "base": "xs:string",
                                 "minLength": "1",
                                 "maxLength": "35",
                                 "expression": {
                                     "regex": "[0-9a-zA-Z/\\-\\?:\\(\\)\\.,'\\+ ]+"
                                 }
-                            },
-                            "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.Initn.OrgnlGrpInf"
+                            }
                         },
                         "OrgnlPmtInfId": {
+                            "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.Initn.OrgnlPmtInfId",
                             "minOccurs": 0,
                             "maxOccurs": 1,
-                            "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.Initn.OrgnlPmtInfId",
                             "base": "xs:string",
                             "minLength": "1",
                             "maxLength": "35",
@@ -166,9 +169,9 @@
                             }
                         },
                         "OrgnlInstrId": {
+                            "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.Initn.OrgnlInstrId",
                             "minOccurs": 0,
                             "maxOccurs": 1,
-                            "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.Initn.OrgnlInstrId",
                             "base": "xs:string",
                             "minLength": "1",
                             "maxLength": "35",
@@ -177,9 +180,9 @@
                             }
                         },
                         "OrgnlEndToEndId": {
+                            "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.Initn.OrgnlEndToEndId",
                             "minOccurs": 0,
                             "maxOccurs": 1,
-                            "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.Initn.OrgnlEndToEndId",
                             "base": "xs:string",
                             "minLength": "1",
                             "maxLength": "35",
@@ -188,38 +191,39 @@
                             }
                         },
                         "OrgnlUETR": {
+                            "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.Initn.OrgnlUETR",
                             "minOccurs": 0,
                             "maxOccurs": 1,
-                            "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.Initn.OrgnlUETR",
                             "base": "xs:string",
                             "expression": {
                                 "regex": "[a-f0-9]{8}-[a-f0-9]{4}-4[a-f0-9]{3}-[89ab][a-f0-9]{3}-[a-f0-9]{12}"
                             }
                         },
                         "OrgnlInstdAmt": {
+                            "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.Initn.OrgnlInstdAmt",
                             "minOccurs": 0,
-                            "maxOccurs": 1,
-                            "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.Initn.OrgnlInstdAmt"
+                            "maxOccurs": 1
                         },
                         "ReqdExctnDt": {
+                            "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.Initn.ReqdExctnDt",
                             "minOccurs": 0,
                             "maxOccurs": 1,
                             "Dt": {
                                 "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.Initn.ReqdExctnDt.Dt",
                                 "base": "xs:date"
-                            },
-                            "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.Initn.ReqdExctnDt"
+                            }
                         },
                         "ReqdColltnDt": {
+                            "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.Initn.ReqdColltnDt",
                             "minOccurs": 0,
                             "maxOccurs": 1,
-                            "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.Initn.ReqdColltnDt",
                             "base": "xs:date"
-                        },
-                        "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.Initn"
+                        }
                     },
                     "IntrBk": {
+                        "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.IntrBk",
                         "OrgnlGrpInf": {
+                            "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.IntrBk.OrgnlGrpInf",
                             "minOccurs": 0,
                             "maxOccurs": 1,
                             "OrgnlMsgId": {
@@ -241,31 +245,30 @@
                                 }
                             },
                             "OrgnlCreDtTm": {
+                                "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.IntrBk.OrgnlGrpInf.OrgnlCreDtTm",
                                 "minOccurs": 0,
                                 "maxOccurs": 1,
-                                "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.IntrBk.OrgnlGrpInf.OrgnlCreDtTm",
                                 "base": "xs:dateTime",
                                 "expression": {
                                     "regex": ".*(\\+|-)((0[0-9])|(1[0-3])):[0-5][0-9]"
                                 }
                             },
                             "OrgnlMsgDlvryChanl": {
+                                "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.IntrBk.OrgnlGrpInf.OrgnlMsgDlvryChanl",
                                 "minOccurs": 0,
                                 "maxOccurs": 1,
-                                "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.IntrBk.OrgnlGrpInf.OrgnlMsgDlvryChanl",
                                 "base": "xs:string",
                                 "minLength": "1",
                                 "maxLength": "35",
                                 "expression": {
                                     "regex": "[0-9a-zA-Z/\\-\\?:\\(\\)\\.,'\\+ ]+"
                                 }
-                            },
-                            "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.IntrBk.OrgnlGrpInf"
+                            }
                         },
                         "OrgnlInstrId": {
+                            "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.IntrBk.OrgnlInstrId",
                             "minOccurs": 0,
                             "maxOccurs": 1,
-                            "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.IntrBk.OrgnlInstrId",
                             "base": "xs:string",
                             "minLength": "1",
                             "maxLength": "35",
@@ -274,9 +277,9 @@
                             }
                         },
                         "OrgnlEndToEndId": {
+                            "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.IntrBk.OrgnlEndToEndId",
                             "minOccurs": 0,
                             "maxOccurs": 1,
-                            "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.IntrBk.OrgnlEndToEndId",
                             "base": "xs:string",
                             "minLength": "1",
                             "maxLength": "35",
@@ -285,9 +288,9 @@
                             }
                         },
                         "OrgnlTxId": {
+                            "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.IntrBk.OrgnlTxId",
                             "minOccurs": 0,
                             "maxOccurs": 1,
-                            "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.IntrBk.OrgnlTxId",
                             "base": "xs:string",
                             "minLength": "1",
                             "maxLength": "35",
@@ -296,32 +299,34 @@
                             }
                         },
                         "OrgnlUETR": {
+                            "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.IntrBk.OrgnlUETR",
                             "minOccurs": 0,
                             "maxOccurs": 1,
-                            "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.IntrBk.OrgnlUETR",
                             "base": "xs:string",
                             "expression": {
                                 "regex": "[a-f0-9]{8}-[a-f0-9]{4}-4[a-f0-9]{3}-[89ab][a-f0-9]{3}-[a-f0-9]{12}"
                             }
                         },
                         "OrgnlIntrBkSttlmAmt": {
+                            "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.IntrBk.OrgnlIntrBkSttlmAmt",
                             "minOccurs": 0,
-                            "maxOccurs": 1,
-                            "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.IntrBk.OrgnlIntrBkSttlmAmt"
+                            "maxOccurs": 1
                         },
                         "OrgnlIntrBkSttlmDt": {
+                            "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.IntrBk.OrgnlIntrBkSttlmDt",
                             "minOccurs": 0,
                             "maxOccurs": 1,
-                            "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.IntrBk.OrgnlIntrBkSttlmDt",
                             "base": "xs:date"
-                        },
-                        "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.IntrBk"
+                        }
                     },
                     "StmtNtry": {
+                        "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.StmtNtry",
                         "OrgnlAcct": {
+                            "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.StmtNtry.OrgnlAcct",
                             "minOccurs": 0,
                             "maxOccurs": 1,
                             "Id": {
+                                "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.StmtNtry.OrgnlAcct.Id",
                                 "minOccurs": 0,
                                 "maxOccurs": 1,
                                 "IBAN": {
@@ -332,6 +337,7 @@
                                     }
                                 },
                                 "Othr": {
+                                    "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.StmtNtry.OrgnlAcct.Id.Othr",
                                     "Id": {
                                         "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.StmtNtry.OrgnlAcct.Id.Othr.Id",
                                         "base": "xs:string",
@@ -340,23 +346,21 @@
                                         "expression": {
                                             "regex": "([0-9a-zA-Z\\-\\?:\\(\\)\\.,'\\+ ]([0-9a-zA-Z\\-\\?:\\(\\)\\.,'\\+ ]*(/[0-9a-zA-Z\\-\\?:\\(\\)\\.,'\\+ ])?)*)"
                                         }
-                                    },
-                                    "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.StmtNtry.OrgnlAcct.Id.Othr"
-                                },
-                                "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.StmtNtry.OrgnlAcct.Id"
+                                    }
+                                }
                             },
                             "Ccy": {
+                                "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.StmtNtry.OrgnlAcct.Ccy",
                                 "minOccurs": 0,
                                 "maxOccurs": 1,
-                                "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.StmtNtry.OrgnlAcct.Ccy",
                                 "base": "xs:string",
                                 "expression": {
                                     "regex": "[A-Z]{3,3}"
                                 }
-                            },
-                            "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.StmtNtry.OrgnlAcct"
+                            }
                         },
                         "OrgnlGrpInf": {
+                            "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.StmtNtry.OrgnlGrpInf",
                             "minOccurs": 0,
                             "maxOccurs": 1,
                             "OrgnlMsgId": {
@@ -378,20 +382,19 @@
                                 }
                             },
                             "OrgnlCreDtTm": {
+                                "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.StmtNtry.OrgnlGrpInf.OrgnlCreDtTm",
                                 "minOccurs": 0,
                                 "maxOccurs": 1,
-                                "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.StmtNtry.OrgnlGrpInf.OrgnlCreDtTm",
                                 "base": "xs:dateTime",
                                 "expression": {
                                     "regex": ".*(\\+|-)((0[0-9])|(1[0-3])):[0-5][0-9]"
                                 }
-                            },
-                            "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.StmtNtry.OrgnlGrpInf"
+                            }
                         },
                         "OrgnlStmtId": {
+                            "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.StmtNtry.OrgnlStmtId",
                             "minOccurs": 0,
                             "maxOccurs": 1,
-                            "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.StmtNtry.OrgnlStmtId",
                             "base": "xs:string",
                             "minLength": "1",
                             "maxLength": "35",
@@ -400,9 +403,9 @@
                             }
                         },
                         "OrgnlNtryRef": {
+                            "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.StmtNtry.OrgnlNtryRef",
                             "minOccurs": 0,
                             "maxOccurs": 1,
-                            "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.StmtNtry.OrgnlNtryRef",
                             "base": "xs:string",
                             "minLength": "1",
                             "maxLength": "35",
@@ -411,9 +414,9 @@
                             }
                         },
                         "OrgnlUETR": {
+                            "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.StmtNtry.OrgnlUETR",
                             "minOccurs": 0,
                             "maxOccurs": 1,
-                            "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.StmtNtry.OrgnlUETR",
                             "base": "xs:string",
                             "expression": {
                                 "regex": "[a-f0-9]{8}-[a-f0-9]{4}-4[a-f0-9]{3}-[89ab][a-f0-9]{3}-[a-f0-9]{12}"
@@ -423,16 +426,17 @@
                             "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.StmtNtry.OrgnlNtryAmt"
                         },
                         "OrgnlNtryValDt": {
+                            "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.StmtNtry.OrgnlNtryValDt",
                             "Dt": {
                                 "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.StmtNtry.OrgnlNtryValDt.Dt",
                                 "base": "xs:date"
-                            },
-                            "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.StmtNtry.OrgnlNtryValDt"
-                        },
-                        "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.StmtNtry"
+                            }
+                        }
                     },
                     "Acct": {
+                        "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.Acct",
                         "Id": {
+                            "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.Acct.Id",
                             "minOccurs": 0,
                             "maxOccurs": 1,
                             "IBAN": {
@@ -443,6 +447,7 @@
                                 }
                             },
                             "Othr": {
+                                "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.Acct.Id.Othr",
                                 "Id": {
                                     "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.Acct.Id.Othr.Id",
                                     "base": "xs:string",
@@ -451,24 +456,24 @@
                                     "expression": {
                                         "regex": "([0-9a-zA-Z\\-\\?:\\(\\)\\.,'\\+ ]([0-9a-zA-Z\\-\\?:\\(\\)\\.,'\\+ ]*(/[0-9a-zA-Z\\-\\?:\\(\\)\\.,'\\+ ])?)*)"
                                     }
-                                },
-                                "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.Acct.Id.Othr"
-                            },
-                            "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.Acct.Id"
+                                }
+                            }
                         },
                         "Ccy": {
+                            "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.Acct.Ccy",
                             "minOccurs": 0,
                             "maxOccurs": 1,
-                            "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.Acct.Ccy",
                             "base": "xs:string",
                             "expression": {
                                 "regex": "[A-Z]{3,3}"
                             }
                         },
                         "Prxy": {
+                            "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.Acct.Prxy",
                             "minOccurs": 0,
                             "maxOccurs": 1,
                             "Tp": {
+                                "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.Acct.Prxy.Tp",
                                 "minOccurs": 0,
                                 "maxOccurs": 1,
                                 "Cd": {
@@ -485,8 +490,7 @@
                                     "expression": {
                                         "regex": "[0-9a-zA-Z/\\-\\?:\\(\\)\\.,'\\+ ]+"
                                     }
-                                },
-                                "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.Acct.Prxy.Tp"
+                                }
                             },
                             "Id": {
                                 "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.Acct.Prxy.Id",
@@ -496,12 +500,11 @@
                                 "expression": {
                                     "regex": "[0-9a-zA-Z/\\-\\?:\\(\\)\\.,'\\+ !#$%&\\*=^_`\\{\\|\\}~\";<>@\\[\\\\\\]]+"
                                 }
-                            },
-                            "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.Acct.Prxy"
-                        },
-                        "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.Acct"
+                            }
+                        }
                     },
                     "Othr": {
+                        "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.Othr",
                         "Id": {
                             "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.Othr.Id",
                             "base": "xs:string",
@@ -512,9 +515,9 @@
                             }
                         },
                         "SchmeNm": {
+                            "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.Othr.SchmeNm",
                             "minOccurs": 0,
                             "maxOccurs": 1,
-                            "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.Othr.SchmeNm",
                             "base": "xs:string",
                             "minLength": "1",
                             "maxLength": "35",
@@ -523,71 +526,70 @@
                             }
                         },
                         "Issr": {
+                            "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.Othr.Issr",
                             "minOccurs": 0,
                             "maxOccurs": 1,
-                            "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.Othr.Issr",
                             "base": "xs:string",
                             "minLength": "1",
                             "maxLength": "35",
                             "expression": {
                                 "regex": "[0-9a-zA-Z/\\-\\?:\\(\\)\\.,'\\+ ]+"
                             }
-                        },
-                        "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.Othr"
-                    },
-                    "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg"
+                        }
+                    }
                 },
                 "Rqstr": {
+                    "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.Rqstr",
                     "Agt": {
+                        "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.Rqstr.Agt",
                         "FinInstnId": {
+                            "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.Rqstr.Agt.FinInstnId",
                             "BICFI": {
                                 "sourceField": "Document.InvstgtnReq.InvstgtnReq.Rqstr.Agt.FinInstnId.BICFI",
                                 "base": "xs:string",
                                 "expression": {
                                     "regex": "[A-Z0-9]{4,4}[A-Z]{2,2}[A-Z0-9]{2,2}([A-Z0-9]{3,3}){0,1}"
                                 }
-                            },
-                            "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.Rqstr.Agt.FinInstnId"
-                        },
-                        "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.Rqstr.Agt"
-                    },
-                    "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.Rqstr"
+                            }
+                        }
+                    }
                 },
                 "Rspndr": {
+                    "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.Rspndr",
                     "Agt": {
+                        "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.Rspndr.Agt",
                         "FinInstnId": {
+                            "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.Rspndr.Agt.FinInstnId",
                             "BICFI": {
                                 "sourceField": "Document.InvstgtnReq.InvstgtnReq.Rspndr.Agt.FinInstnId.BICFI",
                                 "base": "xs:string",
                                 "expression": {
                                     "regex": "[A-Z0-9]{4,4}[A-Z]{2,2}[A-Z0-9]{2,2}([A-Z0-9]{3,3}){0,1}"
                                 }
-                            },
-                            "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.Rspndr.Agt.FinInstnId"
-                        },
-                        "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.Rspndr.Agt"
-                    },
-                    "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.Rspndr"
+                            }
+                        }
+                    }
                 },
                 "ReqOrgtr": {
+                    "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.ReqOrgtr",
                     "minOccurs": 0,
                     "maxOccurs": 1,
                     "Agt": {
+                        "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.ReqOrgtr.Agt",
                         "FinInstnId": {
+                            "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.ReqOrgtr.Agt.FinInstnId",
                             "BICFI": {
                                 "sourceField": "Document.InvstgtnReq.InvstgtnReq.ReqOrgtr.Agt.FinInstnId.BICFI",
                                 "base": "xs:string",
                                 "expression": {
                                     "regex": "[A-Z0-9]{4,4}[A-Z]{2,2}[A-Z0-9]{2,2}([A-Z0-9]{3,3}){0,1}"
                                 }
-                            },
-                            "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.ReqOrgtr.Agt.FinInstnId"
-                        },
-                        "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.ReqOrgtr.Agt"
-                    },
-                    "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.ReqOrgtr"
+                            }
+                        }
+                    }
                 },
                 "SvcLvl": {
+                    "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.SvcLvl",
                     "minOccurs": 0,
                     "maxOccurs": 1,
                     "Cd": {
@@ -595,32 +597,32 @@
                         "base": "xs:string",
                         "minLength": "1",
                         "maxLength": "4"
-                    },
-                    "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.SvcLvl"
-                },
-                "groupSourceField": "Document.InvstgtnReq.InvstgtnReq"
+                    }
+                }
             },
             "InvstgtnData": {
+                "groupSourceField": "Document.InvstgtnReq.InvstgtnData",
                 "minOccurs": 1,
                 "maxOccurs": "unbounded",
                 "Seq": {
+                    "sourceField": "Document.InvstgtnReq.InvstgtnData.Seq",
                     "minOccurs": 0,
                     "maxOccurs": 1,
-                    "sourceField": "Document.InvstgtnReq.InvstgtnData.Seq",
                     "base": "xs:decimal",
                     "totalDigits": "3",
                     "fractionDigits": "0"
                 },
                 "Rsn": {
+                    "groupSourceField": "Document.InvstgtnReq.InvstgtnData.Rsn",
                     "Cd": {
                         "sourceField": "Document.InvstgtnReq.InvstgtnData.Rsn.Cd",
                         "base": "xs:string",
                         "minLength": "1",
                         "maxLength": "4"
-                    },
-                    "groupSourceField": "Document.InvstgtnReq.InvstgtnData.Rsn"
+                    }
                 },
                 "RsnSubTp": {
+                    "groupSourceField": "Document.InvstgtnReq.InvstgtnData.RsnSubTp",
                     "minOccurs": 0,
                     "maxOccurs": 1,
                     "Cd": {
@@ -628,10 +630,10 @@
                         "base": "xs:string",
                         "minLength": "1",
                         "maxLength": "4"
-                    },
-                    "groupSourceField": "Document.InvstgtnReq.InvstgtnData.RsnSubTp"
+                    }
                 },
                 "AddtlReqData": {
+                    "groupSourceField": "Document.InvstgtnReq.InvstgtnData.AddtlReqData",
                     "minOccurs": 0,
                     "maxOccurs": 1,
                     "ReqNrrtv": {
@@ -642,13 +644,9 @@
                         "expression": {
                             "regex": "[0-9a-zA-Z/\\-\\?:\\(\\)\\.,'\\+ ]+"
                         }
-                    },
-                    "groupSourceField": "Document.InvstgtnReq.InvstgtnData.AddtlReqData"
-                },
-                "groupSourceField": "Document.InvstgtnReq.InvstgtnData"
-            },
-            "groupSourceField": "Document.InvstgtnReq"
-        },
-        "groupSourceField": "Document"
+                    }
+                }
+            }
+        }
     }
 }
