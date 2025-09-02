@@ -9,9 +9,9 @@ def parse_restrictions(elem):
 
     restriction = elem.find(".//xs:restriction", ns)
     if restriction is not None:
-        base = restriction.get("base")
-        if base:
-            restrictions["base"] = base
+        # base = restriction.get("base")
+        # if base:
+        #     restrictions["base"] = base
 
         # minLength, maxLength, length, totalDigits, fractionDigits
         for tag in ["minLength", "maxLength", "length", "totalDigits", "fractionDigits"]:
@@ -113,7 +113,6 @@ def parse_xsd(file_path):
     for elem in root.findall("xs:element", ns):
         walk_element(result, "", elem)
 
-    print(result)
     return result
 
 
@@ -121,5 +120,5 @@ if __name__ == "__main__":
     xsd_file = "xsd-files/SwiftCase-Investigations-SR2025_RQFI_COMP_UGs_InvestigationRequest_SR2025_20250323_1023_iso15enriched.xsd"
     json_output = parse_xsd(xsd_file)
 
-    with open("elements.json", "w") as f:
+    with open("Mapper.json", "w") as f:
         json.dump(json_output, f, indent=4)

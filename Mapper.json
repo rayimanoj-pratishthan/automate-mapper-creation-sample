@@ -7,7 +7,6 @@
                 "groupSourceField": "Document.InvstgtnReq.InvstgtnReq",
                 "MsgId": {
                     "sourceField": "Document.InvstgtnReq.InvstgtnReq.MsgId",
-                    "base": "xs:string",
                     "minLength": "1",
                     "maxLength": "35",
                     "expression": {
@@ -16,7 +15,6 @@
                 },
                 "RqstrInvstgtnId": {
                     "sourceField": "Document.InvstgtnReq.InvstgtnReq.RqstrInvstgtnId",
-                    "base": "xs:string",
                     "minLength": "1",
                     "maxLength": "16",
                     "expression": {
@@ -27,7 +25,6 @@
                     "sourceField": "Document.InvstgtnReq.InvstgtnReq.RspndrInvstgtnId",
                     "minOccurs": 0,
                     "maxOccurs": 1,
-                    "base": "xs:string",
                     "minLength": "1",
                     "maxLength": "16",
                     "expression": {
@@ -38,7 +35,6 @@
                     "sourceField": "Document.InvstgtnReq.InvstgtnReq.EIR",
                     "minOccurs": 0,
                     "maxOccurs": 1,
-                    "base": "xs:string",
                     "expression": {
                         "regex": "[a-f0-9]{8}-[a-f0-9]{4}-4[a-f0-9]{3}-[89ab][a-f0-9]{3}-[a-f0-9]{12}"
                     }
@@ -51,7 +47,6 @@
                         "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.ReqActn.Actn",
                         "Cd": {
                             "sourceField": "Document.InvstgtnReq.InvstgtnReq.ReqActn.Actn.Cd",
-                            "base": "xs:string",
                             "minLength": "1",
                             "maxLength": "4"
                         }
@@ -64,7 +59,6 @@
                             "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.ReqActn.ActnRsn.Rsn",
                             "Cd": {
                                 "sourceField": "Document.InvstgtnReq.InvstgtnReq.ReqActn.ActnRsn.Rsn.Cd",
-                                "base": "xs:string",
                                 "minLength": "1",
                                 "maxLength": "4"
                             }
@@ -73,7 +67,6 @@
                             "sourceField": "Document.InvstgtnReq.InvstgtnReq.ReqActn.ActnRsn.AddtlInf",
                             "minOccurs": 0,
                             "maxOccurs": 2,
-                            "base": "xs:string",
                             "minLength": "1",
                             "maxLength": "105",
                             "expression": {
@@ -86,7 +79,6 @@
                     "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.InvstgtnTp",
                     "Cd": {
                         "sourceField": "Document.InvstgtnReq.InvstgtnReq.InvstgtnTp.Cd",
-                        "base": "xs:string",
                         "enumerations": [
                             "RQFI"
                         ]
@@ -96,7 +88,6 @@
                     "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.InvstgtnSubTp",
                     "Cd": {
                         "sourceField": "Document.InvstgtnReq.InvstgtnReq.InvstgtnSubTp.Cd",
-                        "base": "xs:string",
                         "minLength": "1",
                         "maxLength": "4"
                     }
@@ -105,7 +96,6 @@
                     "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.UndrlygInstrm",
                     "Cd": {
                         "sourceField": "Document.InvstgtnReq.InvstgtnReq.UndrlygInstrm.Cd",
-                        "base": "xs:string",
                         "minLength": "1",
                         "maxLength": "4"
                     }
@@ -120,7 +110,6 @@
                             "maxOccurs": 1,
                             "OrgnlMsgId": {
                                 "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.Initn.OrgnlGrpInf.OrgnlMsgId",
-                                "base": "xs:string",
                                 "minLength": "1",
                                 "maxLength": "35",
                                 "expression": {
@@ -129,7 +118,6 @@
                             },
                             "OrgnlMsgNmId": {
                                 "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.Initn.OrgnlGrpInf.OrgnlMsgNmId",
-                                "base": "xs:string",
                                 "minLength": "1",
                                 "maxLength": "35",
                                 "expression": {
@@ -140,7 +128,6 @@
                                 "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.Initn.OrgnlGrpInf.OrgnlCreDtTm",
                                 "minOccurs": 0,
                                 "maxOccurs": 1,
-                                "base": "xs:dateTime",
                                 "expression": {
                                     "regex": ".*(\\+|-)((0[0-9])|(1[0-3])):[0-5][0-9]"
                                 }
@@ -149,7 +136,6 @@
                                 "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.Initn.OrgnlGrpInf.OrgnlMsgDlvryChanl",
                                 "minOccurs": 0,
                                 "maxOccurs": 1,
-                                "base": "xs:string",
                                 "minLength": "1",
                                 "maxLength": "35",
                                 "expression": {
@@ -161,7 +147,6 @@
                             "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.Initn.OrgnlPmtInfId",
                             "minOccurs": 0,
                             "maxOccurs": 1,
-                            "base": "xs:string",
                             "minLength": "1",
                             "maxLength": "35",
                             "expression": {
@@ -172,7 +157,6 @@
                             "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.Initn.OrgnlInstrId",
                             "minOccurs": 0,
                             "maxOccurs": 1,
-                            "base": "xs:string",
                             "minLength": "1",
                             "maxLength": "35",
                             "expression": {
@@ -183,7 +167,6 @@
                             "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.Initn.OrgnlEndToEndId",
                             "minOccurs": 0,
                             "maxOccurs": 1,
-                            "base": "xs:string",
                             "minLength": "1",
                             "maxLength": "35",
                             "expression": {
@@ -194,7 +177,6 @@
                             "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.Initn.OrgnlUETR",
                             "minOccurs": 0,
                             "maxOccurs": 1,
-                            "base": "xs:string",
                             "expression": {
                                 "regex": "[a-f0-9]{8}-[a-f0-9]{4}-4[a-f0-9]{3}-[89ab][a-f0-9]{3}-[a-f0-9]{12}"
                             }
@@ -209,15 +191,13 @@
                             "minOccurs": 0,
                             "maxOccurs": 1,
                             "Dt": {
-                                "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.Initn.ReqdExctnDt.Dt",
-                                "base": "xs:date"
+                                "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.Initn.ReqdExctnDt.Dt"
                             }
                         },
                         "ReqdColltnDt": {
                             "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.Initn.ReqdColltnDt",
                             "minOccurs": 0,
-                            "maxOccurs": 1,
-                            "base": "xs:date"
+                            "maxOccurs": 1
                         }
                     },
                     "IntrBk": {
@@ -228,7 +208,6 @@
                             "maxOccurs": 1,
                             "OrgnlMsgId": {
                                 "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.IntrBk.OrgnlGrpInf.OrgnlMsgId",
-                                "base": "xs:string",
                                 "minLength": "1",
                                 "maxLength": "35",
                                 "expression": {
@@ -237,7 +216,6 @@
                             },
                             "OrgnlMsgNmId": {
                                 "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.IntrBk.OrgnlGrpInf.OrgnlMsgNmId",
-                                "base": "xs:string",
                                 "minLength": "1",
                                 "maxLength": "35",
                                 "expression": {
@@ -248,7 +226,6 @@
                                 "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.IntrBk.OrgnlGrpInf.OrgnlCreDtTm",
                                 "minOccurs": 0,
                                 "maxOccurs": 1,
-                                "base": "xs:dateTime",
                                 "expression": {
                                     "regex": ".*(\\+|-)((0[0-9])|(1[0-3])):[0-5][0-9]"
                                 }
@@ -257,7 +234,6 @@
                                 "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.IntrBk.OrgnlGrpInf.OrgnlMsgDlvryChanl",
                                 "minOccurs": 0,
                                 "maxOccurs": 1,
-                                "base": "xs:string",
                                 "minLength": "1",
                                 "maxLength": "35",
                                 "expression": {
@@ -269,7 +245,6 @@
                             "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.IntrBk.OrgnlInstrId",
                             "minOccurs": 0,
                             "maxOccurs": 1,
-                            "base": "xs:string",
                             "minLength": "1",
                             "maxLength": "35",
                             "expression": {
@@ -280,7 +255,6 @@
                             "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.IntrBk.OrgnlEndToEndId",
                             "minOccurs": 0,
                             "maxOccurs": 1,
-                            "base": "xs:string",
                             "minLength": "1",
                             "maxLength": "35",
                             "expression": {
@@ -291,7 +265,6 @@
                             "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.IntrBk.OrgnlTxId",
                             "minOccurs": 0,
                             "maxOccurs": 1,
-                            "base": "xs:string",
                             "minLength": "1",
                             "maxLength": "35",
                             "expression": {
@@ -302,7 +275,6 @@
                             "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.IntrBk.OrgnlUETR",
                             "minOccurs": 0,
                             "maxOccurs": 1,
-                            "base": "xs:string",
                             "expression": {
                                 "regex": "[a-f0-9]{8}-[a-f0-9]{4}-4[a-f0-9]{3}-[89ab][a-f0-9]{3}-[a-f0-9]{12}"
                             }
@@ -315,8 +287,7 @@
                         "OrgnlIntrBkSttlmDt": {
                             "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.IntrBk.OrgnlIntrBkSttlmDt",
                             "minOccurs": 0,
-                            "maxOccurs": 1,
-                            "base": "xs:date"
+                            "maxOccurs": 1
                         }
                     },
                     "StmtNtry": {
@@ -331,7 +302,6 @@
                                 "maxOccurs": 1,
                                 "IBAN": {
                                     "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.StmtNtry.OrgnlAcct.Id.IBAN",
-                                    "base": "xs:string",
                                     "expression": {
                                         "regex": "[A-Z]{2,2}[0-9]{2,2}[a-zA-Z0-9]{1,30}"
                                     }
@@ -340,7 +310,6 @@
                                     "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.StmtNtry.OrgnlAcct.Id.Othr",
                                     "Id": {
                                         "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.StmtNtry.OrgnlAcct.Id.Othr.Id",
-                                        "base": "xs:string",
                                         "minLength": "1",
                                         "maxLength": "34",
                                         "expression": {
@@ -353,7 +322,6 @@
                                 "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.StmtNtry.OrgnlAcct.Ccy",
                                 "minOccurs": 0,
                                 "maxOccurs": 1,
-                                "base": "xs:string",
                                 "expression": {
                                     "regex": "[A-Z]{3,3}"
                                 }
@@ -365,7 +333,6 @@
                             "maxOccurs": 1,
                             "OrgnlMsgId": {
                                 "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.StmtNtry.OrgnlGrpInf.OrgnlMsgId",
-                                "base": "xs:string",
                                 "minLength": "1",
                                 "maxLength": "35",
                                 "expression": {
@@ -374,7 +341,6 @@
                             },
                             "OrgnlMsgNmId": {
                                 "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.StmtNtry.OrgnlGrpInf.OrgnlMsgNmId",
-                                "base": "xs:string",
                                 "minLength": "1",
                                 "maxLength": "35",
                                 "expression": {
@@ -385,7 +351,6 @@
                                 "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.StmtNtry.OrgnlGrpInf.OrgnlCreDtTm",
                                 "minOccurs": 0,
                                 "maxOccurs": 1,
-                                "base": "xs:dateTime",
                                 "expression": {
                                     "regex": ".*(\\+|-)((0[0-9])|(1[0-3])):[0-5][0-9]"
                                 }
@@ -395,7 +360,6 @@
                             "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.StmtNtry.OrgnlStmtId",
                             "minOccurs": 0,
                             "maxOccurs": 1,
-                            "base": "xs:string",
                             "minLength": "1",
                             "maxLength": "35",
                             "expression": {
@@ -406,7 +370,6 @@
                             "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.StmtNtry.OrgnlNtryRef",
                             "minOccurs": 0,
                             "maxOccurs": 1,
-                            "base": "xs:string",
                             "minLength": "1",
                             "maxLength": "35",
                             "expression": {
@@ -417,7 +380,6 @@
                             "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.StmtNtry.OrgnlUETR",
                             "minOccurs": 0,
                             "maxOccurs": 1,
-                            "base": "xs:string",
                             "expression": {
                                 "regex": "[a-f0-9]{8}-[a-f0-9]{4}-4[a-f0-9]{3}-[89ab][a-f0-9]{3}-[a-f0-9]{12}"
                             }
@@ -428,8 +390,7 @@
                         "OrgnlNtryValDt": {
                             "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.StmtNtry.OrgnlNtryValDt",
                             "Dt": {
-                                "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.StmtNtry.OrgnlNtryValDt.Dt",
-                                "base": "xs:date"
+                                "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.StmtNtry.OrgnlNtryValDt.Dt"
                             }
                         }
                     },
@@ -441,7 +402,6 @@
                             "maxOccurs": 1,
                             "IBAN": {
                                 "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.Acct.Id.IBAN",
-                                "base": "xs:string",
                                 "expression": {
                                     "regex": "[A-Z]{2,2}[0-9]{2,2}[a-zA-Z0-9]{1,30}"
                                 }
@@ -450,7 +410,6 @@
                                 "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.Acct.Id.Othr",
                                 "Id": {
                                     "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.Acct.Id.Othr.Id",
-                                    "base": "xs:string",
                                     "minLength": "1",
                                     "maxLength": "34",
                                     "expression": {
@@ -463,7 +422,6 @@
                             "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.Acct.Ccy",
                             "minOccurs": 0,
                             "maxOccurs": 1,
-                            "base": "xs:string",
                             "expression": {
                                 "regex": "[A-Z]{3,3}"
                             }
@@ -478,13 +436,11 @@
                                 "maxOccurs": 1,
                                 "Cd": {
                                     "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.Acct.Prxy.Tp.Cd",
-                                    "base": "xs:string",
                                     "minLength": "1",
                                     "maxLength": "4"
                                 },
                                 "Prtry": {
                                     "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.Acct.Prxy.Tp.Prtry",
-                                    "base": "xs:string",
                                     "minLength": "1",
                                     "maxLength": "35",
                                     "expression": {
@@ -494,7 +450,6 @@
                             },
                             "Id": {
                                 "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.Acct.Prxy.Id",
-                                "base": "xs:string",
                                 "minLength": "1",
                                 "maxLength": "320",
                                 "expression": {
@@ -507,7 +462,6 @@
                         "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.Othr",
                         "Id": {
                             "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.Othr.Id",
-                            "base": "xs:string",
                             "minLength": "1",
                             "maxLength": "35",
                             "expression": {
@@ -518,7 +472,6 @@
                             "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.Othr.SchmeNm",
                             "minOccurs": 0,
                             "maxOccurs": 1,
-                            "base": "xs:string",
                             "minLength": "1",
                             "maxLength": "35",
                             "expression": {
@@ -529,7 +482,6 @@
                             "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.Othr.Issr",
                             "minOccurs": 0,
                             "maxOccurs": 1,
-                            "base": "xs:string",
                             "minLength": "1",
                             "maxLength": "35",
                             "expression": {
@@ -546,7 +498,6 @@
                             "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.Rqstr.Agt.FinInstnId",
                             "BICFI": {
                                 "sourceField": "Document.InvstgtnReq.InvstgtnReq.Rqstr.Agt.FinInstnId.BICFI",
-                                "base": "xs:string",
                                 "expression": {
                                     "regex": "[A-Z0-9]{4,4}[A-Z]{2,2}[A-Z0-9]{2,2}([A-Z0-9]{3,3}){0,1}"
                                 }
@@ -562,7 +513,6 @@
                             "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.Rspndr.Agt.FinInstnId",
                             "BICFI": {
                                 "sourceField": "Document.InvstgtnReq.InvstgtnReq.Rspndr.Agt.FinInstnId.BICFI",
-                                "base": "xs:string",
                                 "expression": {
                                     "regex": "[A-Z0-9]{4,4}[A-Z]{2,2}[A-Z0-9]{2,2}([A-Z0-9]{3,3}){0,1}"
                                 }
@@ -580,7 +530,6 @@
                             "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.ReqOrgtr.Agt.FinInstnId",
                             "BICFI": {
                                 "sourceField": "Document.InvstgtnReq.InvstgtnReq.ReqOrgtr.Agt.FinInstnId.BICFI",
-                                "base": "xs:string",
                                 "expression": {
                                     "regex": "[A-Z0-9]{4,4}[A-Z]{2,2}[A-Z0-9]{2,2}([A-Z0-9]{3,3}){0,1}"
                                 }
@@ -594,7 +543,6 @@
                     "maxOccurs": 1,
                     "Cd": {
                         "sourceField": "Document.InvstgtnReq.InvstgtnReq.SvcLvl.Cd",
-                        "base": "xs:string",
                         "minLength": "1",
                         "maxLength": "4"
                     }
@@ -608,7 +556,6 @@
                     "sourceField": "Document.InvstgtnReq.InvstgtnData.Seq",
                     "minOccurs": 0,
                     "maxOccurs": 1,
-                    "base": "xs:decimal",
                     "totalDigits": "3",
                     "fractionDigits": "0"
                 },
@@ -616,7 +563,6 @@
                     "groupSourceField": "Document.InvstgtnReq.InvstgtnData.Rsn",
                     "Cd": {
                         "sourceField": "Document.InvstgtnReq.InvstgtnData.Rsn.Cd",
-                        "base": "xs:string",
                         "minLength": "1",
                         "maxLength": "4"
                     }
@@ -627,7 +573,6 @@
                     "maxOccurs": 1,
                     "Cd": {
                         "sourceField": "Document.InvstgtnReq.InvstgtnData.RsnSubTp.Cd",
-                        "base": "xs:string",
                         "minLength": "1",
                         "maxLength": "4"
                     }
@@ -638,7 +583,6 @@
                     "maxOccurs": 1,
                     "ReqNrrtv": {
                         "sourceField": "Document.InvstgtnReq.InvstgtnData.AddtlReqData.ReqNrrtv",
-                        "base": "xs:string",
                         "minLength": "1",
                         "maxLength": "500",
                         "expression": {
