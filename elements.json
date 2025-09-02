@@ -1,5 +1,7 @@
 {
     "Document": {
+        "minOccurs": 1,
+        "maxOccurs": 1,
         "InvstgtnReq": {
             "InvstgtnReq": {
                 "MsgId": {
