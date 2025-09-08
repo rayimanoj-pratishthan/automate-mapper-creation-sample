@@ -117,7 +117,7 @@ def parse_xsd(file_path):
 
 
 if __name__ == "__main__":
-    xsd_file = "xsd-files/SwiftCase-Investigations-SR2025_RQFI_COMP_UGs_InvestigationRequest_SR2025_20250323_1023_iso15enriched.xsd"
+    xsd_file = "xsd-files/CBPRPlus_SR2025_(Combined)_CBPRPlus-pacs_008_001_08_FIToFICustomerCreditTransfer_20241213_0956_iso15enriched.xsd"
     json_output = parse_xsd(xsd_file)
 
     with open("Mapper.json", "w") as f:
