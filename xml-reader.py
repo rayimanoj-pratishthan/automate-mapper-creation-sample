@@ -41,7 +41,7 @@ def parse_xsd(file_path):
         if name:
             complex_types[name] = ctype
 
-    # 🔑 Collect simpleType definitions too
+    # Collect simpleType definitions too
     simple_types = {}
     for stype in root.findall("xs:simpleType", ns):
         name = stype.get("name")
@@ -79,7 +79,7 @@ def parse_xsd(file_path):
             else:
                 parent_dict[name]["sourceField"] = full_path
 
-            # 🔑 restrictions (priority: inline > referenced simpleType)
+            # restrictions (priority: inline > referenced simpleType)
             restr = parse_restrictions(elem)
             if not restr and etype in simple_types:
                 restr = simple_types[etype]

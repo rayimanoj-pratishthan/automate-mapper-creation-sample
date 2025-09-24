@@ -33,7 +33,7 @@ def parse_restrictions(elem):
             if r is not None and r.get("value"):
                 restrictions[tag] = r.get("value")
 
-        # pattern → register and replace with key
+        # pattern - register and replace with key
         for p in restriction.findall("xs:pattern", ns):
             pat_value = p.get("value")
             if pat_value:
