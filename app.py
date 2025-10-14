@@ -69,8 +69,8 @@ def save_json(data, filename="output.json"):
 
 if __name__ == "__main__":
     # Example usage
-    xsd_path = "xsd-files/SwiftCase-Investigations-SR2025_RQFI_COMP_UGs_InvestigationRequest_SR2025_20250323_1023_iso15enriched.xsd"
+    xsd_path = "xsd-files/SwiftCase-Investigations-SR2025_RQFI_UTEX_UGs_InvestigationRequest_SR2025_20250323_1031_iso15enriched.xsd"
     json_skeleton = xsd_to_json_schema(xsd_path)
 
     # Save to file
-    save_json(json_skeleton, "json-files/schema_skeleton.json")
+    save_json(json_skeleton, "json-files/110_UTEX.json")

@@ -27,25 +27,6 @@
           "Cd": ""
         },
         "Undrlyg": {
-          "Initn": {
-            "OrgnlGrpInf": {
-              "OrgnlMsgId": "",
-              "OrgnlMsgNmId": "",
-              "OrgnlCreDtTm": "",
-              "OrgnlMsgDlvryChanl": ""
-            },
-            "OrgnlPmtInfId": "",
-            "OrgnlInstrId": "",
-            "OrgnlEndToEndId": "",
-            "OrgnlUETR": "",
-            "OrgnlInstdAmt": {
-              "@Ccy": ""
-            },
-            "ReqdExctnDt": {
-              "Dt": ""
-            },
-            "ReqdColltnDt": ""
-          },
           "IntrBk": {
             "OrgnlGrpInf": {
               "OrgnlMsgId": "",
@@ -61,52 +42,6 @@
               "@Ccy": ""
             },
             "OrgnlIntrBkSttlmDt": ""
-          },
-          "StmtNtry": {
-            "OrgnlAcct": {
-              "Id": {
-                "IBAN": "",
-                "Othr": {
-                  "Id": ""
-                }
-              },
-              "Ccy": ""
-            },
-            "OrgnlGrpInf": {
-              "OrgnlMsgId": "",
-              "OrgnlMsgNmId": "",
-              "OrgnlCreDtTm": ""
-            },
-            "OrgnlStmtId": "",
-            "OrgnlNtryRef": "",
-            "OrgnlUETR": "",
-            "OrgnlNtryAmt": {
-              "@Ccy": ""
-            },
-            "OrgnlNtryValDt": {
-              "Dt": ""
-            }
-          },
-          "Acct": {
-            "Id": {
-              "IBAN": "",
-              "Othr": {
-                "Id": ""
-              }
-            },
-            "Ccy": "",
-            "Prxy": {
-              "Tp": {
-                "Cd": "",
-                "Prtry": ""
-              },
-              "Id": ""
-            }
-          },
-          "Othr": {
-            "Id": "",
-            "SchmeNm": "",
-            "Issr": ""
           }
         },
         "Rqstr": {

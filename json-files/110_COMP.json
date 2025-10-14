@@ -1,0 +1,1035 @@
+[
+
+    {
+
+        "migrationData": [
+            {
+                "targetModel": "MapJsonToXml",
+                "whereClause": {
+                    "mapperId": "ISOPACS008TOSWIFTMQPACS008"
+                },
+                "updatePreference": "update",
+                "payload": {
+                    "entryRecordMappingDtls": {
+                        "mappingObject": {
+                            "Document": {
+                                "groupSourceField": "Document",
+                                "minOccurs": 1,
+                                "maxOccurs": 1,
+                                "InvstgtnReq": {
+                                    "groupSourceField": "Document.InvstgtnReq",
+                                    "minOccurs": 1,
+                                    "maxOccurs": 1,
+                                    "InvstgtnReq": {
+                                        "groupSourceField": "Document.InvstgtnReq.InvstgtnReq",
+                                        "minOccurs": 1,
+                                        "maxOccurs": 1,
+                                        "MsgId": {
+                                            "sourceField": "Document.InvstgtnReq.InvstgtnReq.MsgId",
+                                            "expression": {
+                                                "regex": "SWIFT_Set_Text"
+                                            },
+                                            "minOccurs": 1,
+                                            "maxOccurs": 1,
+                                            "maxSize": 35
+                                        },
+                                        "RqstrInvstgtnId": {
+                                            "sourceField": "Document.InvstgtnReq.InvstgtnReq.RqstrInvstgtnId",
+                                            "expression": {
+                                                "regex": "SWIFT_Set_Id"
+                                            },
+                                            "minOccurs": 1,
+                                            "maxOccurs": 1,
+                                            "maxSize": 16
+                                        },
+                                        "RspndrInvstgtnId": {
+                                            "sourceField": "Document.InvstgtnReq.InvstgtnReq.RspndrInvstgtnId",
+                                            "expression": {
+                                                "regex": "SWIFT_Set_Id"
+                                            },
+                                            "minOccurs": 0,
+                                            "maxOccurs": 1,
+                                            "maxSize": 16
+                                        },
+                                        "EIR": {
+                                            "sourceField": "Document.InvstgtnReq.InvstgtnReq.EIR",
+                                            "expression": {
+                                                "regex": "UUIDv4Identifier"
+                                            },
+                                            "minOccurs": 0,
+                                            "maxOccurs": 1
+                                        },
+                                        "ReqActn": {
+                                            "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.ReqActn",
+                                            "minOccurs": 0,
+                                            "maxOccurs": 1,
+                                            "Actn": {
+                                                "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.ReqActn.Actn",
+                                                "onlyOneChild": true,
+                                                "minOccurs": 1,
+                                                "maxOccurs": 1,
+                                                "Cd": {
+                                                    "sourceField": "Document.InvstgtnReq.InvstgtnReq.ReqActn.Actn.Cd",
+                                                    "expression": {
+                                                        "regex": "ExternalInvestigationAction1Code"
+                                                    },
+                                                    "minOccurs": 1,
+                                                    "maxOccurs": 1,
+                                                    "maxSize": 4
+                                                }
+                                            },
+                                            "ActnRsn": {
+                                                "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.ReqActn.ActnRsn",
+                                                "minOccurs": 0,
+                                                "maxOccurs": 1,
+                                                "Rsn": {
+                                                    "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.ReqActn.ActnRsn.Rsn",
+                                                    "onlyOneChild": true,
+                                                    "minOccurs": 1,
+                                                    "maxOccurs": 1,
+                                                    "Cd": {
+                                                        "sourceField": "Document.InvstgtnReq.InvstgtnReq.ReqActn.ActnRsn.Rsn.Cd",
+                                                        "expression": {
+                                                            "regex": "ExternalInvestigationActionReason1Code"
+                                                        },
+                                                        "minOccurs": 1,
+                                                        "maxOccurs": 1,
+                                                        "maxSize": 4
+                                                    }
+                                                },
+                                                "AddtlInf": {
+                                                    "sourceField": "Document.InvstgtnReq.InvstgtnReq.ReqActn.ActnRsn.AddtlInf",
+                                                    "expression": {
+                                                        "regex": "SWIFT_Set_Text"
+                                                    },
+                                                    "minOccurs": 0,
+                                                    "maxOccurs": 2,
+                                                    "maxSize": 105
+                                                }
+                                            }
+                                        },
+                                        "InvstgtnTp": {
+                                            "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.InvstgtnTp",
+                                            "onlyOneChild": true,
+                                            "minOccurs": 1,
+                                            "maxOccurs": 1,
+                                            "Cd": {
+                                                "sourceField": "Document.InvstgtnReq.InvstgtnReq.InvstgtnTp.Cd",
+                                                "expression": {
+                                                    "regex": "ExternalInvestigationType1Code_fixed"
+                                                },
+                                                "defaultValue": "RQFI",
+                                                "minOccurs": 1,
+                                                "maxOccurs": 1
+                                            }
+                                        },
+                                        "InvstgtnSubTp": {
+                                            "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.InvstgtnSubTp",
+                                            "onlyOneChild": true,
+                                            "minOccurs": 1,
+                                            "maxOccurs": 1,
+                                            "Cd": {
+                                                "sourceField": "Document.InvstgtnReq.InvstgtnReq.InvstgtnSubTp.Cd",
+                                                "expression": {
+                                                    "regex": "^(AMLI|FCCI|FRAD|FWTR)$"
+                                                },
+                                                "minOccurs": 1,
+                                                "maxOccurs": 1,
+                                                "maxSize": 4
+                                            }
+                                        },
+                                        "UndrlygInstrm": {
+                                            "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.UndrlygInstrm",
+                                            "onlyOneChild": true,
+                                            "minOccurs": 1,
+                                            "maxOccurs": 1,
+                                            "Cd": {
+                                                "sourceField": "Document.InvstgtnReq.InvstgtnReq.UndrlygInstrm.Cd",
+                                                "expression": {
+                                                    "regex": "ExternalInvestigationInstrument1Code"
+                                                },
+                                                "minOccurs": 1,
+                                                "maxOccurs": 1,
+                                                "maxSize": 4
+                                            }
+                                        },
+                                        "Undrlyg": {
+                                            "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg",
+                                            "onlyOneChild": true,
+                                            "minOccurs": 1,
+                                            "maxOccurs": 1,
+                                            "Initn": {
+                                                "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.Initn",
+                                                "minOccurs": 1,
+                                                "maxOccurs": 1,
+                                                "OrgnlGrpInf": {
+                                                    "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.Initn.OrgnlGrpInf",
+                                                    "minOccurs": 0,
+                                                    "maxOccurs": 1,
+                                                    "OrgnlMsgId": {
+                                                        "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.Initn.OrgnlGrpInf.OrgnlMsgId",
+                                                        "expression": {
+                                                            "regex": "SWIFT_Set_Text"
+                                                        },
+                                                        "minOccurs": 1,
+                                                        "maxOccurs": 1,
+                                                        "maxSize": 35
+                                                    },
+                                                    "OrgnlMsgNmId": {
+                                                        "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.Initn.OrgnlGrpInf.OrgnlMsgNmId",
+                                                        "expression": {
+                                                            "regex": "SWIFT_Set_Text"
+                                                        },
+                                                        "minOccurs": 1,
+                                                        "maxOccurs": 1,
+                                                        "maxSize": 35
+                                                    },
+                                                    "OrgnlCreDtTm": {
+                                                        "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.Initn.OrgnlGrpInf.OrgnlCreDtTm",
+                                                        "expression": {
+                                                            "regex": "IsoDateTime"
+                                                        },
+                                                        "minOccurs": 0,
+                                                        "maxOccurs": 1
+                                                    },
+                                                    "OrgnlMsgDlvryChanl": {
+                                                        "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.Initn.OrgnlGrpInf.OrgnlMsgDlvryChanl",
+                                                        "expression": {
+                                                            "regex": "SWIFT_Set_Text"
+                                                        },
+                                                        "minOccurs": 0,
+                                                        "maxOccurs": 1,
+                                                        "maxSize": 35
+                                                    }
+                                                },
+                                                "OrgnlPmtInfId": {
+                                                    "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.Initn.OrgnlPmtInfId",
+                                                    "expression": {
+                                                        "regex": "SWIFT_Set_Text"
+                                                    },
+                                                    "minOccurs": 0,
+                                                    "maxOccurs": 1,
+                                                    "maxSize": 35
+                                                },
+                                                "OrgnlInstrId": {
+                                                    "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.Initn.OrgnlInstrId",
+                                                    "expression": {
+                                                        "regex": "SWIFT_Set_Text"
+                                                    },
+                                                    "minOccurs": 0,
+                                                    "maxOccurs": 1,
+                                                    "maxSize": 35
+                                                },
+                                                "OrgnlEndToEndId": {
+                                                    "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.Initn.OrgnlEndToEndId",
+                                                    "expression": {
+                                                        "regex": "SWIFT_Set_Text"
+                                                    },
+                                                    "minOccurs": 0,
+                                                    "maxOccurs": 1,
+                                                    "maxSize": 35
+                                                },
+                                                "OrgnlUETR": {
+                                                    "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.Initn.OrgnlUETR",
+                                                    "expression": {
+                                                        "regex": "UUIDv4Identifier"
+                                                    },
+                                                    "minOccurs": 0,
+                                                    "maxOccurs": 1
+                                                },
+                                                "OrgnlInstdAmt": {
+                                                    "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.Initn.OrgnlInstdAmt",
+                                                    "value": {
+                                                        "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.Initn.OrgnlInstdAmt.value",
+                                                        "expression": {
+                                                            "regex": "IsoAmount(\"totalUnits\":14, \"seperator\":\".\", \"currencyPath\": \"Document.InvstgtnReq.InvstgtnReq.Undrlyg.Initn.OrgnlInstdAmt.attr.Ccy\")"
+                                                        },
+                                                        "minOccurs": 0,
+                                                        "maxOccurs": 1,
+                                                        "maxSize": 14
+                                                    },
+                                                    "attr": {
+                                                        "Ccy": {
+                                                            "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.Initn.OrgnlInstdAmt.attr.Ccy",
+                                                            "expression": {
+                                                                "regex": "ActiveOrHistoricCurrencyCode"
+                                                            },
+                                                            "minOccurs": 1,
+                                                            "maxOccurs": 1
+                                                        }
+                                                    }
+                                                },
+                                                "ReqdExctnDt": {
+                                                    "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.Initn.ReqdExctnDt",
+                                                    "onlyOneChild": true,
+                                                    "minOccurs": 0,
+                                                    "maxOccurs": 1,
+                                                    "Dt": {
+                                                        "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.Initn.ReqdExctnDt.Dt",
+                                                        "expression": {
+                                                            "regex": "ISODate"
+                                                        },
+                                                        "minOccurs": 1,
+                                                        "maxOccurs": 1
+                                                    }
+                                                },
+                                                "ReqdColltnDt": {
+                                                    "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.Initn.ReqdColltnDt",
+                                                    "expression": {
+                                                        "regex": "ISODate"
+                                                    },
+                                                    "minOccurs": 0,
+                                                    "maxOccurs": 1
+                                                }
+                                            },
+                                            "IntrBk": {
+                                                "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.IntrBk",
+                                                "minOccurs": 1,
+                                                "maxOccurs": 1,
+                                                "mappingOptions": [
+                                                    {
+                                                        "conditions": [
+                                                            {
+                                                                "path": "Document.InvstgtnReq.InvstgtnReq.UndrlygInstrm.Cd",
+                                                                "operator": "notEqualTo",
+                                                                "values": [
+                                                                    "XBCT"
+                                                                ]
+                                                            },
+                                                            {
+                                                                "path": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.IntrBk",
+                                                                "operator": "bePresent"
+                                                            }
+                                                        ],
+                                                        "mappingObject": {
+                                                            "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.IntrBk",
+                                                            "OrgnlMsgId": {
+                                                                "sourceField": "sameAsSource",
+                                                                "minOccurs": 1
+                                                            },
+                                                            "OrgnlIntrBkSttlmAmt": {
+                                                                "sourceField": "sameAsSource",
+                                                                "minOccurs": 1
+                                                            },
+                                                            "OrgnlIntrBkSttlmDt": {
+                                                                "sourceField": "sameAsSource",
+                                                                "minOccurs": 1
+                                                            },
+                                                            "OrgnlGrpInf": {
+                                                                "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.IntrBk.OrgnlGrpInf",
+                                                                "minOccurs": 0,
+                                                                "maxOccurs": 1,
+                                                                "OrgnlMsgId": {
+                                                                    "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.IntrBk.OrgnlGrpInf.OrgnlMsgId",
+                                                                    "expression": {
+                                                                        "regex": "SWIFT_Set_Text"
+                                                                    },
+                                                                    "minOccurs": 1,
+                                                                    "maxOccurs": 1,
+                                                                    "maxSize": 35
+                                                                },
+                                                                "OrgnlMsgNmId": {
+                                                                    "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.IntrBk.OrgnlGrpInf.OrgnlMsgNmId",
+                                                                    "expression": {
+                                                                        "regex": "SWIFT_Set_Text"
+                                                                    },
+                                                                    "minOccurs": 1,
+                                                                    "maxOccurs": 1,
+                                                                    "maxSize": 35
+                                                                },
+                                                                "OrgnlCreDtTm": {
+                                                                    "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.IntrBk.OrgnlGrpInf.OrgnlCreDtTm",
+                                                                    "expression": {
+                                                                        "regex": "IsoDateTime"
+                                                                    },
+                                                                    "minOccurs": 0,
+                                                                    "maxOccurs": 1
+                                                                },
+                                                                "OrgnlMsgDlvryChanl": {
+                                                                    "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.IntrBk.OrgnlGrpInf.OrgnlMsgDlvryChanl",
+                                                                    "expression": {
+                                                                        "regex": "SWIFT_Set_Text"
+                                                                    },
+                                                                    "minOccurs": 0,
+                                                                    "maxOccurs": 1,
+                                                                    "maxSize": 35
+                                                                }
+                                                            },
+                                                            "OrgnlInstrId": {
+                                                                "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.IntrBk.OrgnlInstrId",
+                                                                "expression": {
+                                                                    "regex": "SWIFT_Set_Text"
+                                                                },
+                                                                "minOccurs": 0,
+                                                                "maxOccurs": 1,
+                                                                "maxSize": 35
+                                                            },
+                                                            "OrgnlEndToEndId": {
+                                                                "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.IntrBk.OrgnlEndToEndId",
+                                                                "expression": {
+                                                                    "regex": "SWIFT_Set_Text"
+                                                                },
+                                                                "minOccurs": 0,
+                                                                "maxOccurs": 1,
+                                                                "maxSize": 35
+                                                            },
+                                                            "OrgnlTxId": {
+                                                                "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.IntrBk.OrgnlTxId",
+                                                                "expression": {
+                                                                    "regex": "SWIFT_Set_Text"
+                                                                },
+                                                                "minOccurs": 0,
+                                                                "maxOccurs": 1,
+                                                                "maxSize": 35
+                                                            },
+                                                            "OrgnlUETR": {
+                                                                "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.IntrBk.OrgnlUETR",
+                                                                "expression": {
+                                                                    "regex": "UUIDv4Identifier"
+                                                                },
+                                                                "minOccurs": 0,
+                                                                "maxOccurs": 1
+                                                            }
+                                                        }
+                                                    },
+                                                    {
+                                                        "conditions": [
+                                                            {
+                                                                "path": "Document.InvstgtnReq.InvstgtnReq.UndrlygInstrm.Cd",
+                                                                "operator": "equalTo",
+                                                                "values": [
+                                                                    "XBCT"
+                                                                ]
+                                                            },
+                                                            {
+                                                                "path": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.IntrBk",
+                                                                "operator": "bePresent"
+                                                            }
+                                                        ],
+                                                        "mappingObject": {
+                                                            "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.IntrBk",
+                                                            "OrgnlTxId": {
+                                                                "sourceField": "sameAsSource",
+                                                                "minOccurs": 0
+                                                            },
+                                                            "OrgnlUETR": {
+                                                                "sourceField": "sameAsSource",
+                                                                "minOccurs": 1
+                                                            },
+                                                            "OrgnlGrpInf": {
+                                                                "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.IntrBk.OrgnlGrpInf",
+                                                                "minOccurs": 0,
+                                                                "maxOccurs": 1,
+                                                                "OrgnlMsgId": {
+                                                                    "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.IntrBk.OrgnlGrpInf.OrgnlMsgId",
+                                                                    "expression": {
+                                                                        "regex": "SWIFT_Set_Text"
+                                                                    },
+                                                                    "minOccurs": 1,
+                                                                    "maxOccurs": 1,
+                                                                    "maxSize": 35
+                                                                },
+                                                                "OrgnlMsgNmId": {
+                                                                    "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.IntrBk.OrgnlGrpInf.OrgnlMsgNmId",
+                                                                    "expression": {
+                                                                        "regex": "SWIFT_Set_Text"
+                                                                    },
+                                                                    "minOccurs": 1,
+                                                                    "maxOccurs": 1,
+                                                                    "maxSize": 35
+                                                                },
+                                                                "OrgnlCreDtTm": {
+                                                                    "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.IntrBk.OrgnlGrpInf.OrgnlCreDtTm",
+                                                                    "expression": {
+                                                                        "regex": "IsoDateTime"
+                                                                    },
+                                                                    "minOccurs": 0,
+                                                                    "maxOccurs": 1
+                                                                },
+                                                                "OrgnlMsgDlvryChanl": {
+                                                                    "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.IntrBk.OrgnlGrpInf.OrgnlMsgDlvryChanl",
+                                                                    "expression": {
+                                                                        "regex": "SWIFT_Set_Text"
+                                                                    },
+                                                                    "minOccurs": 0,
+                                                                    "maxOccurs": 1,
+                                                                    "maxSize": 35
+                                                                }
+                                                            },
+                                                            "OrgnlInstrId": {
+                                                                "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.IntrBk.OrgnlInstrId",
+                                                                "expression": {
+                                                                    "regex": "SWIFT_Set_Text"
+                                                                },
+                                                                "minOccurs": 0,
+                                                                "maxOccurs": 1,
+                                                                "maxSize": 35
+                                                            },
+                                                            "OrgnlEndToEndId": {
+                                                                "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.IntrBk.OrgnlEndToEndId",
+                                                                "expression": {
+                                                                    "regex": "SWIFT_Set_Text"
+                                                                },
+                                                                "minOccurs": 0,
+                                                                "maxOccurs": 1,
+                                                                "maxSize": 35
+                                                            },
+                                                            "OrgnlIntrBkSttlmAmt": {
+                                                                "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.IntrBk.OrgnlIntrBkSttlmAmt",
+                                                                "value": {
+                                                                    "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.IntrBk.OrgnlIntrBkSttlmAmt.value",
+                                                                    "expression": {
+                                                                        "regex": "IsoAmount(\"totalUnits\":14, \"seperator\":\".\", \"currencyPath\": \"Document.InvstgtnReq.InvstgtnReq.Undrlyg.IntrBk.OrgnlIntrBkSttlmAmt.attr.Ccy\")"
+                                                                    },
+                                                                    "minOccurs": 0,
+                                                                    "maxOccurs": 1,
+                                                                    "maxSize": 14
+                                                                },
+                                                                "attr": {
+                                                                    "Ccy": {
+                                                                        "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.IntrBk.OrgnlIntrBkSttlmAmt.attr.Ccy",
+                                                                        "expression": {
+                                                                            "regex": "ActiveCurrencyCode"
+                                                                        },
+                                                                        "minOccurs": 1,
+                                                                        "maxOccurs": 1
+                                                                    }
+                                                                }
+                                                            },
+                                                            "OrgnlIntrBkSttlmDt": {
+                                                                "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.IntrBk.OrgnlIntrBkSttlmDt",
+                                                                "expression": {
+                                                                    "regex": "ISODate"
+                                                                },
+                                                                "minOccurs": 0,
+                                                                "maxOccurs": 1
+                                                            }
+                                                        }
+                                                    }
+                                                ]
+                                            },
+                                            "StmtNtry": {
+                                                "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.StmtNtry",
+                                                "minOccurs": 1,
+                                                "maxOccurs": 1,
+                                                "OrgnlAcct": {
+                                                    "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.StmtNtry.OrgnlAcct",
+                                                    "minOccurs": 0,
+                                                    "maxOccurs": 1,
+                                                    "Id": {
+                                                        "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.StmtNtry.OrgnlAcct.Id",
+                                                        "onlyOneChild": true,
+                                                        "minOccurs": 0,
+                                                        "maxOccurs": 1,
+                                                        "IBAN": {
+                                                            "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.StmtNtry.OrgnlAcct.Id.IBAN",
+                                                            "expression": {
+                                                                "regex": "IBAN2007Identifier"
+                                                            },
+                                                            "minOccurs": 1,
+                                                            "maxOccurs": 1
+                                                        },
+                                                        "Othr": {
+                                                            "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.StmtNtry.OrgnlAcct.Id.Othr",
+                                                            "minOccurs": 1,
+                                                            "maxOccurs": 1,
+                                                            "Id": {
+                                                                "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.StmtNtry.OrgnlAcct.Id.Othr.Id",
+                                                                "expression": {
+                                                                    "regex": "SWIFT_Set_Id"
+                                                                },
+                                                                "minOccurs": 1,
+                                                                "maxOccurs": 1,
+                                                                "maxSize": 34
+                                                            }
+                                                        }
+                                                    },
+                                                    "Ccy": {
+                                                        "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.StmtNtry.OrgnlAcct.Ccy",
+                                                        "expression": {
+                                                            "regex": "ActiveOrHistoricCurrencyCode"
+                                                        },
+                                                        "minOccurs": 0,
+                                                        "maxOccurs": 1
+                                                    }
+                                                },
+                                                "OrgnlGrpInf": {
+                                                    "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.StmtNtry.OrgnlGrpInf",
+                                                    "minOccurs": 0,
+                                                    "maxOccurs": 1,
+                                                    "OrgnlMsgId": {
+                                                        "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.StmtNtry.OrgnlGrpInf.OrgnlMsgId",
+                                                        "expression": {
+                                                            "regex": "SWIFT_Set_Text"
+                                                        },
+                                                        "minOccurs": 1,
+                                                        "maxOccurs": 1,
+                                                        "maxSize": 35
+                                                    },
+                                                    "OrgnlMsgNmId": {
+                                                        "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.StmtNtry.OrgnlGrpInf.OrgnlMsgNmId",
+                                                        "expression": {
+                                                            "regex": "SWIFT_Set_Text"
+                                                        },
+                                                        "minOccurs": 1,
+                                                        "maxOccurs": 1,
+                                                        "maxSize": 35
+                                                    },
+                                                    "OrgnlCreDtTm": {
+                                                        "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.StmtNtry.OrgnlGrpInf.OrgnlCreDtTm",
+                                                        "expression": {
+                                                            "regex": "IsoDateTime"
+                                                        },
+                                                        "minOccurs": 0,
+                                                        "maxOccurs": 1
+                                                    }
+                                                },
+                                                "OrgnlStmtId": {
+                                                    "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.StmtNtry.OrgnlStmtId",
+                                                    "expression": {
+                                                        "regex": "SWIFT_Set_Text"
+                                                    },
+                                                    "fieldMustBePresentIf": [
+                                                        {
+                                                          "conditions": [
+                                                            {
+                                                              "path": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.StmtNtry",
+                                                              "present": true
+                                                            },{
+                                                              "path": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.StmtNtry.OrgnlNtryRef",
+                                                              "present": "false"
+                                                            }
+                                                          ]
+                                                        }
+                                                    ],
+                                                    "minOccurs": 0,
+                                                    "maxOccurs": 1,
+                                                    "maxSize": 35
+                                                },
+                                                "OrgnlNtryRef": {
+                                                    "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.StmtNtry.OrgnlNtryRef",
+                                                    "fieldMustBePresentIf": [
+                                                        {
+                                                          "conditions": [
+                                                            {
+                                                              "path": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.StmtNtry",
+                                                              "present": true
+                                                            },{
+                                                              "path": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.StmtNtry.OrgnlStmtId",
+                                                              "present": false
+                                                            }
+                                                          ]
+                                                        }
+                                                    ],
+                                                    "expression": {
+                                                        "regex": "SWIFT_Set_Text"
+                                                    },
+                                                    "minOccurs": 0,
+                                                    "maxOccurs": 1,
+                                                    "maxSize": 35
+                                                },
+                                                "OrgnlUETR": {
+                                                    "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.StmtNtry.OrgnlUETR",
+                                                    "expression": {
+                                                        "regex": "UUIDv4Identifier"
+                                                    },
+                                                    "minOccurs": 0,
+                                                    "maxOccurs": 1
+                                                },
+                                                "OrgnlNtryAmt": {
+                                                    "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.StmtNtry.OrgnlNtryAmt",
+                                                    "value": {
+                                                        "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.StmtNtry.OrgnlNtryAmt.value",
+                                                        "expression": {
+                                                            "regex": "IsoAmount(\"totalUnits\":18, \"seperator\":\".\", \"currencyPath\": \"Document.InvstgtnReq.InvstgtnReq.Undrlyg.StmtNtry.OrgnlNtryAmt.attr.Ccy\")"
+                                                        },
+                                                        "minOccurs": 1,
+                                                        "maxOccurs": 1,
+                                                        "maxSize": 18
+                                                    },
+                                                    "attr": {
+                                                        "Ccy": {
+                                                            "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.StmtNtry.OrgnlNtryAmt.attr.Ccy",
+                                                            "expression": {
+                                                                "regex": "ActiveOrHistoricCurrencyCode"
+                                                            },
+                                                            "minOccurs": 1,
+                                                            "maxOccurs": 1
+                                                        }
+                                                    }
+                                                },
+                                                "OrgnlNtryValDt": {
+                                                    "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.StmtNtry.OrgnlNtryValDt",
+                                                    "onlyOneChild": true,
+                                                    "minOccurs": 1,
+                                                    "maxOccurs": 1,
+                                                    "Dt": {
+                                                        "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.StmtNtry.OrgnlNtryValDt.Dt",
+                                                        "expression": {
+                                                            "regex": "ISODate"
+                                                        },
+                                                        "minOccurs": 1,
+                                                        "maxOccurs": 1
+                                                    }
+                                                },
+                                                "mappingOptions": {
+                                                    "conditions": [
+                                                        {
+                                                            "path": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.StmtNtry.OrgnlStmtId",
+                                                            "operator": "notPresent"
+                                                        },
+                                                        {
+                                                            "path": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.StmtNtry.OrgnlNtryRef",
+                                                            "operator": "notPresent"
+                                                        }
+                                                    ],
+                                                    "mappingObject": {
+                                                        "OrgnlStmtId": {
+                                                            "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.StmtNtry.OrgnlStmtId",
+                                                            "expression": {
+                                                                "regex": "SWIFT_Set_Text"
+                                                            },
+                                                            "minOccurs": 1,
+                                                            "maxOccurs": 1,
+                                                            "maxSize": 35
+                                                        }
+                                                    }
+                                                }
+                                            },
+                                            "Acct": {
+                                                "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.Acct",
+                                                "minOccurs": 1,
+                                                "maxOccurs": 1,
+                                                "Id": {
+                                                    "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.Acct.Id",
+                                                    "onlyOneChild": true,
+                                                    "minOccurs": 0,
+                                                    "maxOccurs": 1,
+                                                    "IBAN": {
+                                                        "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.Acct.Id.IBAN",
+                                                        "expression": {
+                                                            "regex": "IBAN2007Identifier"
+                                                        },
+                                                        "minOccurs": 1,
+                                                        "maxOccurs": 1
+                                                    },
+                                                    "Othr": {
+                                                        "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.Acct.Id.Othr",
+                                                        "minOccurs": 1,
+                                                        "maxOccurs": 1,
+                                                        "Id": {
+                                                            "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.Acct.Id.Othr.Id",
+                                                            "expression": {
+                                                                "regex": "SWIFT_Set_Id"
+                                                            },
+                                                            "minOccurs": 1,
+                                                            "maxOccurs": 1,
+                                                            "maxSize": 34
+                                                        }
+                                                    }
+                                                },
+                                                "Ccy": {
+                                                    "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.Acct.Ccy",
+                                                    "expression": {
+                                                        "regex": "ActiveOrHistoricCurrencyCode"
+                                                    },
+                                                    "minOccurs": 0,
+                                                    "maxOccurs": 1
+                                                },
+                                                "Prxy": {
+                                                    "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.Acct.Prxy",
+                                                    "minOccurs": 0,
+                                                    "maxOccurs": 1,
+                                                    "Tp": {
+                                                        "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.Acct.Prxy.Tp",
+                                                        "onlyOneChild": true,
+                                                        "minOccurs": 0,
+                                                        "maxOccurs": 1,
+                                                        "Cd": {
+                                                            "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.Acct.Prxy.Tp.Cd",
+                                                            "expression": {
+                                                                "regex": "ExternalProxyAccountType1Code"
+                                                            },
+                                                            "minOccurs": 1,
+                                                            "maxOccurs": 1,
+                                                            "maxSize": 4
+                                                        },
+                                                        "Prtry": {
+                                                            "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.Acct.Prxy.Tp.Prtry",
+                                                            "expression": {
+                                                                "regex": "SWIFT_Set_Text"
+                                                            },
+                                                            "minOccurs": 1,
+                                                            "maxOccurs": 1,
+                                                            "maxSize": 35
+                                                        }
+                                                    },
+                                                    "Id": {
+                                                        "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.Acct.Prxy.Id",
+                                                        "expression": {
+                                                            "regex": "SWIFT_Set_String"
+                                                        },
+                                                        "minOccurs": 1,
+                                                        "maxOccurs": 1,
+                                                        "maxSize": 320
+                                                    }
+                                                }
+                                            },
+                                            "Othr": {
+                                                "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.Othr",
+                                                "minOccurs": 1,
+                                                "maxOccurs": 1,
+                                                "Id": {
+                                                    "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.Othr.Id",
+                                                    "expression": {
+                                                        "regex": "SWIFT_Set_Text"
+                                                    },
+                                                    "minOccurs": 1,
+                                                    "maxOccurs": 1,
+                                                    "maxSize": 35
+                                                },
+                                                "SchmeNm": {
+                                                    "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.Othr.SchmeNm",
+                                                    "expression": {
+                                                        "regex": "SWIFT_Set_Text"
+                                                    },
+                                                    "minOccurs": 0,
+                                                    "maxOccurs": 1,
+                                                    "maxSize": 35
+                                                },
+                                                "Issr": {
+                                                    "sourceField": "Document.InvstgtnReq.InvstgtnReq.Undrlyg.Othr.Issr",
+                                                    "expression": {
+                                                        "regex": "SWIFT_Set_Text"
+                                                    },
+                                                    "minOccurs": 0,
+                                                    "maxOccurs": 1,
+                                                    "maxSize": 35
+                                                }
+                                            }
+                                        },
+                                        "Rqstr": {
+                                            "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.Rqstr",
+                                            "onlyOneChild": true,
+                                            "minOccurs": 1,
+                                            "maxOccurs": 1,
+                                            "Agt": {
+                                                "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.Rqstr.Agt",
+                                                "minOccurs": 1,
+                                                "maxOccurs": 1,
+                                                "FinInstnId": {
+                                                    "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.Rqstr.Agt.FinInstnId",
+                                                    "minOccurs": 1,
+                                                    "maxOccurs": 1,
+                                                    "BICFI": {
+                                                        "sourceField": "Document.InvstgtnReq.InvstgtnReq.Rqstr.Agt.FinInstnId.BICFI",
+                                                        "expression": {
+                                                            "regex": "BICFIDec2014Identifier"
+                                                        },
+                                                        "minOccurs": 1,
+                                                        "maxOccurs": 1
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        "Rspndr": {
+                                            "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.Rspndr",
+                                            "onlyOneChild": true,
+                                            "minOccurs": 1,
+                                            "maxOccurs": 1,
+                                            "Agt": {
+                                                "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.Rspndr.Agt",
+                                                "minOccurs": 1,
+                                                "maxOccurs": 1,
+                                                "FinInstnId": {
+                                                    "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.Rspndr.Agt.FinInstnId",
+                                                    "minOccurs": 1,
+                                                    "maxOccurs": 1,
+                                                    "BICFI": {
+                                                        "sourceField": "Document.InvstgtnReq.InvstgtnReq.Rspndr.Agt.FinInstnId.BICFI",
+                                                        "expression": {
+                                                            "regex": "BICFIDec2014Identifier"
+                                                        },
+                                                        "minOccurs": 1,
+                                                        "maxOccurs": 1
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        "ReqOrgtr": {
+                                            "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.ReqOrgtr",
+                                            "onlyOneChild": true,
+                                            "minOccurs": 0,
+                                            "maxOccurs": 1,
+                                            "Agt": {
+                                                "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.ReqOrgtr.Agt",
+                                                "minOccurs": 1,
+                                                "maxOccurs": 1,
+                                                "FinInstnId": {
+                                                    "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.ReqOrgtr.Agt.FinInstnId",
+                                                    "minOccurs": 1,
+                                                    "maxOccurs": 1,
+                                                    "BICFI": {
+                                                        "sourceField": "Document.InvstgtnReq.InvstgtnReq.ReqOrgtr.Agt.FinInstnId.BICFI",
+                                                        "expression": {
+                                                            "regex": "BICFIDec2014Identifier"
+                                                        },
+                                                        "minOccurs": 1,
+                                                        "maxOccurs": 1
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        "SvcLvl": {
+                                            "groupSourceField": "Document.InvstgtnReq.InvstgtnReq.SvcLvl",
+                                            "onlyOneChild": true,
+                                            "minOccurs": 0,
+                                            "maxOccurs": 1,
+                                            "Cd": {
+                                                "sourceField": "Document.InvstgtnReq.InvstgtnReq.SvcLvl.Cd",
+                                                "expression": {
+                                                    "regex": "ExternalInvestigationServiceLevel1Code"
+                                                },
+                                                "minOccurs": 1,
+                                                "maxOccurs": 1,
+                                                "maxSize": 4
+                                            }
+                                        }
+                                    }
+                                },
+                                "InvstgtnData": {
+                                    "groupSourceField": "Document.InvstgtnReq.InvstgtnData",
+                                    "minOccurs": 1,
+                                    "maxOccurs": "*",
+                                    "mappingOptions": {
+                                        "conditions": [
+                                            {
+                                                "path": "Document.InvstgtnReq.InvstgtnData.RsnSubTp",
+                                                "operator": "ifpresent"
+                                            }
+                                        ],
+                                        "mappingObject": {
+                                            "Seq": {
+                                                "sourceField": "Document.InvstgtnReq.InvstgtnData.Seq",
+                                                "expression": {
+                                                    "regex": "CASE_Max3Number"
+                                                },
+                                                "minOccurs": 0,
+                                                "maxOccurs": 1
+                                            },
+                                            "Rsn": {
+                                                "groupSourceField": "Document.InvstgtnReq.InvstgtnData.Rsn",
+                                                "onlyOneChild": true,
+                                                "minOccurs": 1,
+                                                "maxOccurs": 1,
+                                                "Cd": {
+                                                    "sourceField": "Document.InvstgtnReq.InvstgtnData.Rsn.Cd",
+                                                    "expression": {
+                                                        "regex": "ExternalInvestigationReason1Code"
+                                                    },
+                                                    "minOccurs": 1,
+                                                    "maxOccurs": 1,
+                                                    "maxSize": 4
+                                                }
+                                            },
+                                            "RsnSubTp": {
+                                                "groupSourceField": "Document.InvstgtnReq.InvstgtnData.RsnSubTp",
+                                                "onlyOneChild": true,
+                                                "minOccurs": 0,
+                                                "maxOccurs": 1,
+                                                "Cd": {
+                                                    "sourceField": "Document.InvstgtnReq.InvstgtnData.RsnSubTp.Cd",
+                                                    "expression": {
+                                                        "regex": "ExternalInvestigationReasonSubType1Code"
+                                                    },
+                                                    "minOccurs": 1,
+                                                    "maxOccurs": 1,
+                                                    "maxSize": 4
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "conditions": [
+                                        {
+                                            "path": "Document.InvstgtnReq.InvstgtnData.RsnSubTp",
+                                            "operator": "notPresent"
+                                        }
+                                    ],
+                                    "mappingObject": {
+                                        "Seq": {
+                                            "sourceField": "Document.InvstgtnReq.InvstgtnData.Seq",
+                                            "expression": {
+                                                "regex": "CASE_Max3Number"
+                                            },
+                                            "minOccurs": 0,
+                                            "maxOccurs": 1
+                                        },
+                                        "Rsn": {
+                                            "groupSourceField": "Document.InvstgtnReq.InvstgtnData.Rsn",
+                                            "onlyOneChild": true,
+                                            "minOccurs": 1,
+                                            "maxOccurs": 1,
+                                            "Cd": {
+                                                "sourceField": "Document.InvstgtnReq.InvstgtnData.Rsn.Cd",
+                                                "expression": {
+                                                    "regex": "ExternalInvestigationReason1Code"
+                                                },
+                                                "minOccurs": 1,
+                                                "maxOccurs": 1,
+                                                "maxSize": 4
+                                            }
+                                        },
+                                        "AddtlReqData": {
+                                            "groupSourceField": "Document.InvstgtnReq.InvstgtnData.AddtlReqData",
+                                            "onlyOneChild": true,
+                                            "minOccurs": 0,
+                                            "maxOccurs": 1,
+                                            "ReqNrrtv": {
+                                                "sourceField": "Document.InvstgtnReq.InvstgtnData.AddtlReqData.ReqNrrtv",
+                                                "expression": {
+                                                    "regex": "SWIFT_Set_String"
+                                                },
+                                                "minOccurs": 1,
+                                                "maxOccurs": 1,
+                                                "maxSize": 500
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "bahIdentifiers": {
+                        "messageDefinitionId": "swift.camt.110.001.01",
+                        "mappingOptions": [
+                            {
+                                "conditions": [
+                                    {
+                                        "path": "Document.InvstgtnReq.InvstgtnReq.InvstgtnSubTp.Cd",
+                                        "operator": "equalsTo",
+                                        "values": "UTEX"
+                                    }
+                                ],
+                                "mappingObject": {
+                                    "businessService": "swift.case.utex.02"
+                                }
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "path": "Document.InvstgtnReq.InvstgtnReq.InvstgtnSubTp.Cd",
+                                        "operator": "notEqualsTo",
+                                        "values": "UTEX"
+                                    }
+                                ],
+                                "mappingObject": {
+                                    "businessService": "swift.case.compliance.02"
+                                }
+                            }
+                        ]
+                    }
+                }
+            }
+        ]
+    }
+]

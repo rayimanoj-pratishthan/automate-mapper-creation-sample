@@ -13,7 +13,7 @@
                         "regex": "[0-9a-zA-Z/\\-\\?:\\(\\)\\.,'\\+ ]+"
                     }
                 },
-                "CreDtTm": {
+
                     "sourceField": "Document.FIToFICstmrCdtTrf.GrpHdr.CreDtTm",
                     "expression": {
                         "regex": ".*(\\+|-)((0[0-9])|(1[0-4])):[0-5][0-9]"
